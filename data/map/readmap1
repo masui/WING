@@ -1,0 +1,98 @@
+#!/usr/local/bin/perl
+#
+#	POIのタイプを識別する
+#
+$file = shift;
+
+$name{3521} = "Shrine";
+$name{3522} = "Temple";
+$name{3523} = "Church";
+$name{3524} = "School";
+$name{3532} = "Hospital";
+$name{3519} = "PublicOffice";
+$name{3514} = "Police";
+$name{3509} = "PostOffice";
+$name{3516} = "FireStation";
+$name{3503} = "PublicOffice"; # sonota
+$name{3525} = "Kindergarten";
+$name{3528} = "Library";
+$name{3526} = "PublicHall";
+$name{3534} = "Bank";
+$name{3539} = "DepartmentStore";
+$name{3540} = "Hotel";
+$name{3548} = "Factory";
+$name{3545} = "Warehouse";
+$name{3599} = "HistoricPlace";
+$name{3549} = "PowerPlant";
+
+open(in,$file) || die;
+$_ = <in>;
+$_ = <in>;
+$_ = <in>;
+$_ = <in>;
+while(<in>){
+	chop;
+	if(/^[A-Z]/){
+		if($line){
+			&processline1($line);
+		}
+		$line = $_;
+	}
+	else {
+		$line .= $_;
+	}
+}
+&processline1($line);
+close(in);
+
+open(in,$file) || die;
+$_ = <in>;
+$_ = <in>;
+$_ = <in>;
+$_ = <in>;
+while(<in>){
+	chop;
+	if(/^[A-Z]/){
+		if($line){
+			&processline2($line);
+		}
+		$line = $_;
+	}
+	else {
+		$line .= $_;
+	}
+}
+&processline2($line);
+close(in);
+
+sub processline1
+{
+	local($_) = @_;
+	if(/^E5(....)/){
+		$type = $1;
+		@a = split;
+		s/.{104}//;
+		s/\s*$//;
+		s/\s.*$//;
+		$type{$a[10],$a[9]} = $type;
+	}
+	elsif(/^E2../){
+		s/.{84}//;
+	}
+}
+
+sub processline2
+{
+	local($_) = @_;
+	if(/^E7..../){
+		@a = split;
+		s/.{104}//;
+		s/\s*$//;
+		$type = $type{$a[10],$a[9]};
+		print "$a[10] $a[9] $_ $name{$type}\n";
+	}
+	elsif(/^E2../){
+		s/.{84}//;
+	}
+}
+

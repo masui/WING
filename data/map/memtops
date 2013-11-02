@@ -1,0 +1,43 @@
+#!/usr/local/bin/perl
+#
+#	等高線もどきを描く
+#
+$_ = <>;
+
+print "%!PS-Adobe-2.0\n";
+
+print "100 100 translate\n";
+print "2 2 scale\n";
+print "0 setlinewidth\n";
+
+while(<>){
+	chop;
+	s/(.{9})//;
+	@a = ();
+	while(s/.....//){
+		push(@a,$&);
+	}
+	for $x (0..199){
+		$alt{$x,199-$y} = int($a[$x]/100);
+	}
+	$y++;
+}
+
+for $y (0..199){
+	$y1 = $y+1;
+	for $x (0..199){
+		$x1 = $x+1;
+		if($x == 0 || $alt{$x-1,$y} != $alt{$x,$y}){
+			print "$x $y moveto $x $y1 lineto stroke\n";
+		}
+		elsif($x == 199 || $alt{$x+1,$y} != $alt{$x,$y}){
+			print "$x1 $y moveto $x1 $y1 lineto stroke\n";
+		}
+		if($y == 0 || $alt{$x,$y-1} != $alt{$x,$y}){
+			print "$x $y moveto $x1 $y lineto stroke\n";
+		}
+		elsif($y == 199 || $alt{$x,$y+1} != $alt{$x,$y}){
+			print "$x $y1 moveto $x1 $y1 lineto stroke\n";
+		}
+	}
+}

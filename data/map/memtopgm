@@ -1,0 +1,17 @@
+#!/usr/local/bin/perl
+$_ = <>;
+
+print "P2\n";
+print "200 200\n";
+print "700\n";
+
+while(<>){
+	chop;
+	s/(.{9})//;
+	@a = ();
+	while(s/.....//){
+		push(@a,$&);
+	}
+	for $i (@a){ print int($i/8)," "; }
+	print "\n";
+}

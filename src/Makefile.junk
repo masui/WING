@@ -1,0 +1,151 @@
+#
+#	$Date: 1995/02/02 07:49:08 $
+#	$Revision: 1.11 $
+#
+#	make map で "map" プログラム作成
+#	make all で 依存関係等も再計算
+#
+
+#
+#	以下の定義はソース中のものと同じであるが
+#	変更すると好きなディレクトリを指定可能。
+#
+TEXTDIR =	\"/usr/people/wing/WING/data/text/\"
+IMAGEDIR =	\"/usr/people/wing/WING/data/rgb/\"
+MAPDIR =	\"/usr/people/wing/WING/data/map/\"
+JISFONTDIR =	\"/usr/people/wing/WING/fonts/\"
+PINDEX =	\"/usr/people/wing/WING/data/pindex\"
+#
+#	INDEXPOSX = 10, etc. も設定可能
+#
+
+# COBJ =	loadrgb.o loadbw.o drawingpad.o	main.o draw.o \
+# 	move.o mapData.o calc.o digitalMap.o geom.o \
+# 	mapitem.o readdata.o showGuide.o index.o toc.o \
+# 	jstring.o sub.o calcWeight.o
+
+COBJ =	loadrgb.o loadbw.o main.o draw.o \
+	move.o mapData.o calc.o dMap.o geom.o \
+	mapitem.o readdata.o sGuide.o index.o toc.o \
+	jstring.o sub.o cWeight.o
+
+SRC =	calc.c calc.h dEntry.h dMap.c dMap.h draw.c \
+	draw.h dPad.c dPad.h geom.c geom.h index.c \
+	index.h jstring.c jstring.h loadbw.c loadbw.h loadrgb.c loadrgb.h \
+	main.c main.h mapData.c mapData.h mapitem.c mapitem.h move.c \
+	move.h readdata.c toc.c toc.h sGuide.c sub.c sub.h \
+ 	winpos.h cWeight.h cWeight.c
+
+# 画像をプリロードするときは -DPRELOADIMAGE を指定
+#
+# DEFINES = -DDATADIR=${DATADIR} -DJISFONTDIR=${JISFONTDIR} -DMAPDIR=${MAPDIR} -DTIMEZOOM
+# DEFINES = -DDATADIR=${DATADIR} -DJISFONTDIR=${JISFONTDIR} -DMAPDIR=${MAPDIR} -DFLIGHT
+DEFINES = -DTEXTDIR=${TEXTDIR} -DIMAGEDIR=${IMAGEDIR} -DJISFONTDIR=${JISFONTDIR} -DMAPDIR=${MAPDIR} -DPINDEX=${PINDEX}
+CFLAGS = -g ${DEFINES}
+#CFLAGS = -O ${DEFINES}
+LIBS = /usr/share/src/OpenGL/libaux/libaux.a -lGL -lGLU -limage -lX11 -lm
+
+wing: ${COBJ}
+	${CC} ${CFLAGS} -o wing ${COBJ} ${LIBS}
+
+all: depend tags pindex wing
+
+pindex:
+	cd ../data; make pindex
+
+#
+#	テスト/ベンチマーク
+#
+jstringtest:
+	${CC} -DBENCH jstring.c -lgl -ljgl -lm
+readdatatest: sub.o loadrgb.o
+	${CC} -DTEST readdata.c sub.o loadrgb.o -lgl -limage
+imagetest:
+	${CC} -DTEST loadrgb.c -lgl -limage
+#
+#	TAGS, 依存関係, etc.
+#
+MAKEDEPEND = /usr/bin/X11/makedepend
+ETAGS = /usr/local/mule/etc/etags
+
+depend: Makefile
+Makefile: ${SRC}
+	${MAKEDEPEND} ${SRC}
+tags: TAGS
+TAGS: ${SRC}
+	${ETAGS} ${SRC}
+
+clean:
+	/bin/rm -f a.out *.o *~ #* core wing
+
+co:
+	co -l ${SRC}
+
+# DO NOT DELETE THIS LINE -- make depend depends on it.
+
+calc.o: /usr/include/stdio.h /usr/include/gl.h /usr/include/gl/device.h
+calc.o: /usr/include/math.h calc.h
+dMap.o: /usr/include/stdio.h /usr/include/math.h dMap.h mapData.h
+draw.o: /usr/include/gl.h /usr/include/gl/sphere.h /usr/include/gl/gl.h
+draw.o: /usr/include/string.h /usr/include/math.h main.h mapitem.h
+draw.o: dEntry.h dPad.h draw.h geom.h mapData.h calc.h move.h
+draw.o: winpos.h loadrgb.h loadbw.h
+draw.o: geom.h mapitem.h dEntry.h
+dPad.o: /usr/include/fcntl.h /usr/include/sys/types.h
+dPad.o: /usr/include/sgidefs.h /usr/include/sys/fcntl.h
+dPad.o: /usr/include/termios.h /usr/include/sys/termios.h
+dPad.o: /usr/include/sys/ttydev.h /usr/include/sys/ioctl.h
+dPad.o: /usr/include/sys/ioccom.h /usr/include/net/soioctl.h
+dPad.o: /usr/include/sys/termio.h dPad.h
+geom.o: /usr/include/gl.h /usr/include/stdio.h geom.h mapitem.h dEntry.h
+geom.o: calc.h /usr/include/math.h
+geom.o: mapitem.h dEntry.h
+index.o: /usr/include/stdio.h /usr/include/stdlib.h /usr/include/sgidefs.h
+index.o: /usr/include/math.h /usr/include/gl/gl.h /usr/include/gl/device.h
+index.o: index.h dEntry.h jstring.h /usr/include/jgl.h sub.h winpos.h
+index.o: main.h /usr/include/gl.h mapitem.h dPad.h move.h mapData.h
+index.o: cWeight.h ./dEntry.h
+index.o: dEntry.h
+jstring.o: /usr/include/stdio.h /usr/include/gl/gl.h jstring.h
+jstring.o: /usr/include/jgl.h
+jstring.o: /usr/include/jgl.h
+loadbw.o: /usr/include/gl.h /usr/include/device.h /usr/include/gl/image.h
+loadbw.o: /usr/include/stdio.h loadbw.h
+loadrgb.o: /usr/include/stdio.h /usr/include/gl.h /usr/include/device.h
+loadrgb.o: /usr/include/gl/image.h loadrgb.h
+main.o: /usr/include/X11/Xlib.h /usr/include/sys/types.h
+main.o: /usr/include/sgidefs.h /usr/include/X11/X.h
+main.o: /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h
+main.o: /usr/include/stddef.h /usr/include/gl.h /usr/include/gl/device.h
+main.o: /usr/include/sys/mman.h /usr/include/fcntl.h /usr/include/sys/fcntl.h
+main.o: /usr/include/stdio.h /usr/include/signal.h /usr/include/sys/signal.h
+main.o: /usr/include/math.h /usr/include/alloca.h main.h mapitem.h
+main.o: dEntry.h dPad.h draw.h geom.h move.h mapData.h calc.h
+main.o: index.h toc.h sGuide.h ./dEntry.h sub.h
+main.o: /usr/include/gl.h mapitem.h dEntry.h dPad.h
+mapData.o: /usr/include/gl.h /usr/include/stdio.h /usr/include/string.h
+mapData.o: /usr/include/math.h mapData.h dMap.h main.h mapitem.h
+mapData.o: dEntry.h dPad.h draw.h geom.h sGuide.h ./dEntry.h
+mapitem.o: /usr/include/gl.h /usr/include/stdio.h /usr/include/math.h
+mapitem.o: mapitem.h dEntry.h geom.h main.h dPad.h mapData.h move.h
+mapitem.o: draw.h calc.h sGuide.h ./dEntry.h
+mapitem.o: dEntry.h
+move.o: /usr/include/stdio.h /usr/include/math.h /usr/include/gl/device.h
+move.o: move.h mapData.h main.h /usr/include/gl.h mapitem.h dEntry.h
+move.o: dPad.h draw.h geom.h calc.h
+move.o: mapData.h
+readdata.o: /usr/include/stdio.h /usr/include/sys/types.h
+readdata.o: /usr/include/sgidefs.h /usr/include/dirent.h
+readdata.o: /usr/include/sys/dirent.h dEntry.h loadrgb.h sub.h winpos.h
+toc.o: /usr/include/stdio.h /usr/include/math.h /usr/include/gl/gl.h
+toc.o: /usr/include/gl/device.h toc.h sub.h jstring.h /usr/include/jgl.h
+toc.o: dEntry.h mapitem.h winpos.h dPad.h main.h /usr/include/gl.h
+toc.o: draw.h geom.h move.h mapData.h cWeight.h ./dEntry.h
+sGuide.o: /usr/include/gl.h /usr/include/gl/device.h /usr/include/stdio.h
+sGuide.o: /usr/include/jgl.h mapitem.h dEntry.h /usr/include/math.h
+sGuide.o: jstring.h sGuide.h ./dEntry.h loadrgb.h sub.h winpos.h
+sGuide.o: cWeight.h main.h dPad.h move.h mapData.h
+sub.o: /usr/include/stdio.h /usr/include/gl/gl.h sub.h
+cWeight.o: ./dEntry.h
+cWeight.o: /usr/include/stdio.h /usr/include/math.h dEntry.h
+cWeight.o: cWeight.h ./dEntry.h

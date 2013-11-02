@@ -1,0 +1,75 @@
+/*
+	各ウィンドウのサイズと位置
+
+	$Date: 1995/01/27 10:18:53 $
+	$Revision: 1.2 $
+       ┌────────┬────┐
+       │                │        │
+       │                │        │
+       │     地図       │ ガイド │
+       │                │        │
+       │                │        │
+       │                ├────┤
+       ├────────┤        │
+       │                │  索引  │
+       │     目次       │        │
+       └────────┴────┘
+*/
+
+/*
+	地図ウィンドウ
+*/
+#ifndef MAPOSX
+#define MAPPOSX 0
+#endif
+#ifndef MAPPOSY
+#define MAPPOSY 0
+#endif
+#ifndef MAPSIZE
+#define MAPSIZE 500
+#endif
+/*
+	ガイドウィンドウ
+*/
+#ifndef GUIDEPOSX
+#define GUIDEPOSX 500
+#endif
+#ifndef GUIDEPOSY
+#define GUIDEPOSY 0
+#endif
+#ifndef GUIDEWIDTH
+#define GUIDEWIDTH 600
+#endif
+#ifndef GUIDEHEIGHT
+#define GUIDEHEIGHT 500
+#endif
+/*
+	目次ウィンドウ
+*/
+#ifndef TOCPOSX
+#define TOCPOSX 0
+#endif
+#ifndef TOCPOSY
+#define TOCPOSY 740
+#endif
+#ifndef TOCWIDTH
+#define TOCWIDTH 500
+#endif
+#ifndef TOCHEIGHT
+#define TOCHEIGHT 200
+#endif
+/*
+	索引ウィンドウ
+*/
+#ifndef INDEXPOSX
+#define INDEXPOSX 500
+#endif
+#ifndef INDEXPOSY
+#define INDEXPOSY 740
+#endif
+#ifndef INDEXWIDTH
+#define INDEXWIDTH 600
+#endif
+#ifndef INDEXHEIGHT
+#define INDEXHEIGHT 200
+#endif

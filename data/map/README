@@ -1,0 +1,7 @@
+naramap:	国土地理院数値データ 地図情報 1/10000
+nara.mem:	国土地理院標高データ 1/25000 200×200メッシュ
+
+readmap -p naramap > nara.ps
+
+memtopgm nara.mem > nara.pgm
+memtops nara.mem > nara.ps	等高線もどきを書く

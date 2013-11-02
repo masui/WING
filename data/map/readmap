@@ -1,0 +1,144 @@
+#!/usr/local/bin/perl
+require 'getopts.pl';
+
+unless(&Getopts('p')){
+	print STDERR "illegal option\n";
+	exit;
+}
+
+if($opt_p){
+	print "%!PS-Adobe-2.0\n";
+	print "%%EndComments\n";
+	print "/M {moveto} bind def\n";
+	print "/L {lineto} bind def\n";
+	print "/S {stroke} bind def\n";
+	print "%%EndProlog\n";
+	print "%%BeginSetup\n";
+	print "%%PaperSize: A4\n";
+	print "%%EndSetup\n";
+	print "%%Page: ? 1\n";
+	print "/Ryumin-Light-EUC-H findfont 30 scalefont setfont\n";
+	print "0.12 0.12 scale\n";
+	print "0 setlinewidth\n";
+}
+
+$_ = <>;
+$_ = <>;
+$_ = <>;
+$_ = <>;
+while(<>){
+	chop;
+	if(/^[A-Z]/){
+		if($line){
+			&processline($line);
+		}
+		$line = $_;
+	}
+	else {
+		$line .= $_;
+	}
+}
+&processline($line);
+
+if($opt_p){
+	print "showpage\n";
+	print "%%Trailer\n";
+	print "%%Pages: 0\n";
+}
+
+sub processline
+{
+	local($_) = @_;
+	if($opt_p){ &processline_ps($_); }
+	else { &processline_cat($_); }
+}
+
+sub processline_ps
+{
+	local($_) = @_;
+	if(/^E78.../){
+		@a = split;
+		s/.{104}//;
+		s/\s*$//;
+		print "0 setgray\n";
+		print "$a[10] $a[9] M\n";
+		print "(";
+		while(s/.//){
+			printf("\\%03o",ord($&));
+		}
+		print ") show\n";
+	}
+	elsif(/^E21106/){ # kugiri?
+		s/.{84}//;
+		s/\s*//;
+		@a = split;
+		$y = shift(@a);
+		$x = shift(@a);
+		# print "0.5 setgray\n";
+		print "1 1 0 setrgbcolor\n";
+		print "$x $y M\n";
+		while(1){
+			$y = shift(@a);
+			$x = shift(@a);
+			if($x == 0 && $y == 0){
+				print "S\n";
+				last;
+			}
+			print "$x $y L\n";
+		}
+	}
+	elsif(/^E221../){ # road
+		s/.{84}//;
+		s/\s*//;
+		@a = split;
+		$y = shift(@a);
+		$x = shift(@a);
+		print "0 setgray\n";
+		print "$x $y M\n";
+		while(1){
+			$y = shift(@a);
+			$x = shift(@a);
+			if($x == 0 && $y == 0){
+				print "S\n";
+				last;
+			}
+			print "$x $y L\n";
+		}
+	}
+	elsif(/^E25100/){ # pond
+		s/.{84}//;
+		s/\s*//;
+		@a = split;
+		$y = shift(@a);
+		$x = shift(@a);
+		print "0 0 1 setrgbcolor\n";
+		print "$x $y M\n";
+		while(1){
+			$y = shift(@a);
+			$x = shift(@a);
+			if($x == 0 && $y == 0){
+				print "closepath fill\n";
+				last;
+			}
+			print "$x $y L\n";
+		}
+	}
+}
+
+sub processline_cat
+{
+	local($_) = @_;
+#	if(/^E78.../){
+	if(/^E5(....)/){
+		$type = $1;
+		@a = split;
+		s/.{104}//;
+		s/\s*$//;
+		s/\s.*$//;
+		print "$a[10] $a[9] $_\n";
+	}
+	elsif(/^E2../){
+		s/.{84}//;
+	}
+}
+

@@ -1,0 +1,12 @@
+#!/usr/local/bin/perl
+# loclist1から一行毎にファイルを作成
+while(<>){
+	chop;
+	@a = split;
+	$filename = $a[0];
+	open(out,"> $filename");
+	print out "Super:\t\t$a[4]\n";
+	print out "Name:\t\t$a[3]\n";
+	print out "Location:\t$a[1] $a[2]\n";
+	close(out);
+}

@@ -1,0 +1,13 @@
+#!/usr/local/bin/perl
+$_ = <>;
+
+while(<>){
+	chop;
+	s/(.{9})//;
+	@a = ();
+	while(s/.....//){
+		push(@a,$&);
+	}
+	for $i (@a){ print $i + 0,"\t"; }
+	print "\n";
+}
