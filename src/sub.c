@@ -15,6 +15,7 @@ static char rcsid[] = "$Header: /usr/people/masui/WING/wing/RCS/sub.c,v 1.3 1995
 #include <GLUT/glut.h>
 
 #include <stdio.h>
+#include <string.h>
 #include "sub.h"
 
 char *salloc(char *str)

@@ -14,8 +14,7 @@
 #include "dataentry.h"
 
 #ifndef PINDEX
-//#define PINDEX "./data/pindex"
-#define PINDEX "/Users/masui/WING/data/pindex"
+#define PINDEX "./data/pindex"
 #endif
 
 extern int	indexwin;

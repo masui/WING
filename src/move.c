@@ -228,7 +228,7 @@ float	to[3];
 float	moveto[3];
 float	delta[3];
 int	numstep;
-int	i, j;
+int	i;
 	
 	eye[0] =eye_x;
 	eye[1] =eye_y;

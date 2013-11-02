@@ -211,8 +211,6 @@ void calcLookAtPoint(float pnt[3], char redrawnow)
 /* call other modules */
 	{
 	float	map_x, map_y;
-	int	irange;
-	float	totalWeight;
 
 	digitalMapCoord(pnt[0], pnt[2], &map_x, &map_y);
 	/* 970911 mina

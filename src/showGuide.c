@@ -147,7 +147,6 @@ void refreshGuide()
   long subbyt;
   long yPos=0, j, k, len;
   char tmpBuf[255];
-  long v[2];
   int	width, height;
 
   glutSetWindow(gWid);

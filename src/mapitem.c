@@ -132,7 +132,6 @@ float	moveto[2];
 void movePrevItem()
 {
 float	moveto[2];
-float	movefrom[3];
 
 float	toPhy;
 float	diffPhy;

@@ -87,8 +87,6 @@ static int	rotating = FALSE;
 
 int main(int argc, char *argv[])
 {
-
-
 	glutInit(&argc, argv);
 	options(argc, argv);
 
