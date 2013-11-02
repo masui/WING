@@ -394,7 +394,6 @@ typedef float P[3];
 
 void drawDigitalMap()
 {
-float	sph[4];
 register int	prevcol;
 register int	i, j;
 

@@ -85,7 +85,7 @@ static int	rotating = FALSE;
 
 
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 int	tid;	/* texture id */
 long	x, y;

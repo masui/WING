@@ -97,8 +97,6 @@ Part	pencursor = {
 
 int genBox(float orig[3], float size[3], int mat, int col, int id, Item *item)
 {
-int	i;
-
 	if ((id < 0) || (MAX_PARTS < id)) {
 		fprintf(stderr, "genBox: id [%d] is out of range\n", id);
 		return(FALSE);

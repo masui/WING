@@ -34,7 +34,7 @@ extern GLfloat	idmat[4][4];
 extern float	weight[10];
 
 /* prototypes */
-extern void	main(int, char *[]);
+extern int	main(int, char *[]);
 extern void	options(int, char *[]);
 extern void	usage(char *);
 extern void	showKeyBinds();

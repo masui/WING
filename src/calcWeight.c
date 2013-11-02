@@ -19,8 +19,6 @@ static char rcsid[] = "$Header: /user/masui/WING/wing/RCS/calcWeight.c,v 1.13 19
 #define MAX_AREA 2000
 #define MAX_DISPLAY_ITEM 30  /* <= nitem  */
 
-static float magnitude,decweight;
-
 #define max(x,y) ((x) > (y) ? (x) : (y))
 
 /*
@@ -141,7 +139,6 @@ void calcWeight(float pointx, float pointy, float eyeheight)
 	int i,count;
 	float  total,distance;
 	int sortOrder[MAXITEM];
-	int ndisp;
 	int haveloc = 0;
 
 
