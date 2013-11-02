@@ -45,13 +45,13 @@ typedef struct {
 static DATA *data = NULL;
 
 static char *fontname[7][2] = {
-	"./fonts/strvec.ixl", "./fonts/strvec.otl",	/* stroke style		*/
-	"./fonts/mincho.ixl", "./fonts/mincho.otl",	/* mincho style outline */
-	"./fonts/gosiku.ixl", "./fonts/gosiku.otl",	/* gosiku style outline */
-	"./fonts/marugo.ixl", "./fonts/marugo.otl",	/* marugo style outline */
-	"./fonts/mincho.ixp", "./fonts/mincho.plg",	/* mincho style polygon */
-	"./fonts/gosiku.ixp", "./fonts/gosiku.plg",	/* gosiku style polygon */
-	"./fonts/marugo.ixp", "./fonts/marugo.plg",	/* marugo style polygon */
+	"/Users/masui/WING/fonts/strvec.ixl", "/Users/masui/WING/fonts/strvec.otl",	/* stroke style		*/
+	"/Users/masui/WING/fonts/mincho.ixl", "/Users/masui/WING/fonts/mincho.otl",	/* mincho style outline */
+	"/Users/masui/WING/fonts/gosiku.ixl", "/Users/masui/WING/fonts/gosiku.otl",	/* gosiku style outline */
+	"/Users/masui/WING/fonts/marugo.ixl", "/Users/masui/WING/fonts/marugo.otl",	/* marugo style outline */
+	"/Users/masui/WING/fonts/mincho.ixp", "/Users/masui/WING/fonts/mincho.plg",	/* mincho style polygon */
+	"/Users/masui/WING/fonts/gosiku.ixp", "/Users/masui/WING/fonts/gosiku.plg",	/* gosiku style polygon */
+	"/Users/masui/WING/fonts/marugo.ixp", "/Users/masui/WING/fonts/marugo.plg",	/* marugo style polygon */
 };
 
 /* Caution! This module use EUC code. Don't change the character code. */

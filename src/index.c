@@ -196,7 +196,6 @@ void indexMouseFunc(int button, int state, int x, int y)
 void indexMotionFunc(int x, int y)
 {
 int delta;
-int i;
 
 /* zoom */
 	if (mouseRpressed) {

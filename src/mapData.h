@@ -12,7 +12,8 @@
 #define	MAPDATA_H
 
 #ifndef MAPDIR
-#define MAPDIR "./data/map/"
+// #define MAPDIR "./data/map/"
+#define MAPDIR "/Users/masui/WING/data/map/"
 #endif
 
 #define	MAXLINES	10000

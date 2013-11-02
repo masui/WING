@@ -1,0 +1,1675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEE57EE61824A81900198653 /* calc.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57EBB1824A81900198653 /* calc.c */; };
+		CEE57EE71824A81900198653 /* calcWeight.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57EBD1824A81900198653 /* calcWeight.c */; };
+		CEE57EE81824A81900198653 /* digitalMap.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57EC01824A81900198653 /* digitalMap.c */; };
+		CEE57EE91824A81900198653 /* draw.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57EC21824A81900198653 /* draw.c */; };
+		CEE57EEA1824A81900198653 /* geom.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57EC41824A81900198653 /* geom.c */; };
+		CEE57EEB1824A81900198653 /* index.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57EC61824A81900198653 /* index.c */; };
+		CEE57EED1824A81900198653 /* joglIntel.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57ECB1824A81900198653 /* joglIntel.c */; };
+		CEE57EEE1824A81900198653 /* jstring.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57ECC1824A81900198653 /* jstring.c */; };
+		CEE57EF01824A81900198653 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57ECF1824A81900198653 /* main.c */; };
+		CEE57EF11824A81900198653 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = CEE57ED11824A81900198653 /* Makefile */; };
+		CEE57EF21824A81900198653 /* mapData.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57ED31824A81900198653 /* mapData.c */; };
+		CEE57EF31824A81900198653 /* mapitem.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57ED51824A81900198653 /* mapitem.c */; };
+		CEE57EF41824A81900198653 /* move.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57ED71824A81900198653 /* move.c */; };
+		CEE57EF51824A81900198653 /* readdata.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57ED91824A81900198653 /* readdata.c */; };
+		CEE57EF61824A81900198653 /* rgb.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57EDA1824A81900198653 /* rgb.c */; };
+		CEE57EF71824A81900198653 /* showGuide.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57EDC1824A81900198653 /* showGuide.c */; };
+		CEE57EF81824A81900198653 /* sub.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57EDE1824A81900198653 /* sub.c */; };
+		CEE57EF91824A81900198653 /* toc.c in Sources */ = {isa = PBXBuildFile; fileRef = CEE57EE01824A81900198653 /* toc.c */; };
+		CEE581811824AC3800198653 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE581801824AC3800198653 /* OpenGL.framework */; };
+		CEE581831824AC4100198653 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE581821824AC4100198653 /* GLUT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CEE57EAB1824A7DB00198653 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CEE57EAD1824A7DB00198653 /* WING */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WING; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE57EBA1824A81900198653 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		CEE57EBB1824A81900198653 /* calc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = calc.c; sourceTree = "<group>"; };
+		CEE57EBC1824A81900198653 /* calc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calc.h; sourceTree = "<group>"; };
+		CEE57EBD1824A81900198653 /* calcWeight.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = calcWeight.c; sourceTree = "<group>"; };
+		CEE57EBE1824A81900198653 /* calcWeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = calcWeight.h; sourceTree = "<group>"; };
+		CEE57EBF1824A81900198653 /* dataentry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dataentry.h; sourceTree = "<group>"; };
+		CEE57EC01824A81900198653 /* digitalMap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = digitalMap.c; sourceTree = "<group>"; };
+		CEE57EC11824A81900198653 /* digitalMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = digitalMap.h; sourceTree = "<group>"; };
+		CEE57EC21824A81900198653 /* draw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = draw.c; sourceTree = "<group>"; };
+		CEE57EC31824A81900198653 /* draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = draw.h; sourceTree = "<group>"; };
+		CEE57EC41824A81900198653 /* geom.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = geom.c; sourceTree = "<group>"; };
+		CEE57EC51824A81900198653 /* geom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geom.h; sourceTree = "<group>"; };
+		CEE57EC61824A81900198653 /* index.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = index.c; sourceTree = "<group>"; };
+		CEE57EC71824A81900198653 /* index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = index.h; sourceTree = "<group>"; };
+		CEE57EC91824A81900198653 /* jogl.c.bak */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = jogl.c.bak; sourceTree = "<group>"; };
+		CEE57ECA1824A81900198653 /* jogl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jogl.h; sourceTree = "<group>"; };
+		CEE57ECB1824A81900198653 /* joglIntel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = joglIntel.c; sourceTree = "<group>"; };
+		CEE57ECC1824A81900198653 /* jstring.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jstring.c; sourceTree = "<group>"; };
+		CEE57ECD1824A81900198653 /* jstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jstring.h; sourceTree = "<group>"; };
+		CEE57ECF1824A81900198653 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		CEE57ED01824A81900198653 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		CEE57ED11824A81900198653 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		CEE57ED21824A81900198653 /* Makefile.junk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.junk; sourceTree = "<group>"; };
+		CEE57ED31824A81900198653 /* mapData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mapData.c; sourceTree = "<group>"; };
+		CEE57ED41824A81900198653 /* mapData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapData.h; sourceTree = "<group>"; };
+		CEE57ED51824A81900198653 /* mapitem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mapitem.c; sourceTree = "<group>"; };
+		CEE57ED61824A81900198653 /* mapitem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapitem.h; sourceTree = "<group>"; };
+		CEE57ED71824A81900198653 /* move.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = move.c; sourceTree = "<group>"; };
+		CEE57ED81824A81900198653 /* move.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = move.h; sourceTree = "<group>"; };
+		CEE57ED91824A81900198653 /* readdata.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = readdata.c; sourceTree = "<group>"; };
+		CEE57EDA1824A81900198653 /* rgb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rgb.c; sourceTree = "<group>"; };
+		CEE57EDB1824A81900198653 /* rgb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rgb.h; sourceTree = "<group>"; };
+		CEE57EDC1824A81900198653 /* showGuide.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = showGuide.c; sourceTree = "<group>"; };
+		CEE57EDD1824A81900198653 /* showGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = showGuide.h; sourceTree = "<group>"; };
+		CEE57EDE1824A81900198653 /* sub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sub.c; sourceTree = "<group>"; };
+		CEE57EDF1824A81900198653 /* sub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sub.h; sourceTree = "<group>"; };
+		CEE57EE01824A81900198653 /* toc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = toc.c; sourceTree = "<group>"; };
+		CEE57EE11824A81900198653 /* toc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = toc.h; sourceTree = "<group>"; };
+		CEE57EE21824A81900198653 /* winpos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = winpos.h; sourceTree = "<group>"; };
+		CEE57EE31824A81900198653 /* winpos.h.org */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = winpos.h.org; sourceTree = "<group>"; };
+		CEE57EE41824A81900198653 /* winpos.h.small */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = winpos.h.small; sourceTree = "<group>"; };
+		CEE57EE51824A81900198653 /* winpos.h.wide */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = winpos.h.wide; sourceTree = "<group>"; };
+		CEE57EFB1824AA5B00198653 /* gosiku.ixl */ = {isa = PBXFileReference; lastKnownFileType = file; path = gosiku.ixl; sourceTree = "<group>"; };
+		CEE57EFC1824AA5B00198653 /* gosiku.otl */ = {isa = PBXFileReference; lastKnownFileType = file; path = gosiku.otl; sourceTree = "<group>"; };
+		CEE57EFD1824AA5B00198653 /* jis16 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jis16; sourceTree = "<group>"; };
+		CEE57EFE1824AA5B00198653 /* jis24 */ = {isa = PBXFileReference; lastKnownFileType = file; path = jis24; sourceTree = "<group>"; };
+		CEE57EFF1824AA5B00198653 /* strvec.ixl */ = {isa = PBXFileReference; lastKnownFileType = file; path = strvec.ixl; sourceTree = "<group>"; };
+		CEE57F001824AA5B00198653 /* strvec.otl */ = {isa = PBXFileReference; lastKnownFileType = file; path = strvec.otl; sourceTree = "<group>"; };
+		CEE57F031824AA6700198653 /* list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = list; sourceTree = "<group>"; };
+		CEE57F041824AA6700198653 /* loclist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loclist; sourceTree = "<group>"; };
+		CEE57F051824AA6700198653 /* loclist1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = loclist1; sourceTree = "<group>"; };
+		CEE57F061824AA6700198653 /* makedata */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = makedata; sourceTree = "<group>"; };
+		CEE57F071824AA6700198653 /* memtopgm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = memtopgm; sourceTree = "<group>"; };
+		CEE57F081824AA6700198653 /* memtops */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = memtops; sourceTree = "<group>"; };
+		CEE57F091824AA6700198653 /* memtoss */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = memtoss; sourceTree = "<group>"; };
+		CEE57F0A1824AA6700198653 /* nara.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nara.map; sourceTree = "<group>"; };
+		CEE57F0B1824AA6700198653 /* nara.mem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nara.mem; sourceTree = "<group>"; };
+		CEE57F0C1824AA6700198653 /* nara.pgm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nara.pgm; sourceTree = "<group>"; };
+		CEE57F0D1824AA6700198653 /* naramap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = naramap; sourceTree = "<group>"; };
+		CEE57F0E1824AA6700198653 /* readmap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = readmap; sourceTree = "<group>"; };
+		CEE57F0F1824AA6700198653 /* readmap1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = readmap1; sourceTree = "<group>"; };
+		CEE57F101824AA6700198653 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		CEE57F111824AA6700198653 /* pindex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pindex; sourceTree = "<group>"; };
+		CEE57F131824AA6700198653 /* 00MAPPING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 00MAPPING; sourceTree = "<group>"; };
+		CEE57F141824AA6700198653 /* Borden.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = Borden.rgb; sourceTree = "<group>"; };
+		CEE57F151824AA6700198653 /* FujitaUnkoudou.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = FujitaUnkoudou.rgb; sourceTree = "<group>"; };
+		CEE57F161824AA6700198653 /* HoteruFujita.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = HoteruFujita.rgb; sourceTree = "<group>"; };
+		CEE57F171824AA6700198653 /* img0001.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0001.rgb; sourceTree = "<group>"; };
+		CEE57F181824AA6700198653 /* img0002.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0002.rgb; sourceTree = "<group>"; };
+		CEE57F191824AA6700198653 /* img0003.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0003.rgb; sourceTree = "<group>"; };
+		CEE57F1A1824AA6700198653 /* img0004.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0004.rgb; sourceTree = "<group>"; };
+		CEE57F1B1824AA6700198653 /* img0005.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0005.rgb; sourceTree = "<group>"; };
+		CEE57F1C1824AA6700198653 /* img0006.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0006.rgb; sourceTree = "<group>"; };
+		CEE57F1D1824AA6700198653 /* img0007.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0007.rgb; sourceTree = "<group>"; };
+		CEE57F1E1824AA6700198653 /* img0008.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0008.rgb; sourceTree = "<group>"; };
+		CEE57F1F1824AA6700198653 /* img0009.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0009.rgb; sourceTree = "<group>"; };
+		CEE57F201824AA6700198653 /* img0010.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0010.rgb; sourceTree = "<group>"; };
+		CEE57F211824AA6700198653 /* img0011.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0011.rgb; sourceTree = "<group>"; };
+		CEE57F221824AA6700198653 /* img0012.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0012.rgb; sourceTree = "<group>"; };
+		CEE57F231824AA6700198653 /* img0013.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0013.rgb; sourceTree = "<group>"; };
+		CEE57F241824AA6700198653 /* img0014.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0014.rgb; sourceTree = "<group>"; };
+		CEE57F251824AA6700198653 /* img0015.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0015.rgb; sourceTree = "<group>"; };
+		CEE57F261824AA6700198653 /* img0016.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0016.rgb; sourceTree = "<group>"; };
+		CEE57F271824AA6700198653 /* img0017.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0017.rgb; sourceTree = "<group>"; };
+		CEE57F281824AA6700198653 /* img0018.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0018.rgb; sourceTree = "<group>"; };
+		CEE57F291824AA6700198653 /* img0019.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0019.rgb; sourceTree = "<group>"; };
+		CEE57F2A1824AA6700198653 /* img0020.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0020.rgb; sourceTree = "<group>"; };
+		CEE57F2B1824AA6700198653 /* img0021.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0021.rgb; sourceTree = "<group>"; };
+		CEE57F2C1824AA6700198653 /* img0022.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0022.rgb; sourceTree = "<group>"; };
+		CEE57F2D1824AA6700198653 /* img0023.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0023.rgb; sourceTree = "<group>"; };
+		CEE57F2E1824AA6700198653 /* img0024.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0024.rgb; sourceTree = "<group>"; };
+		CEE57F2F1824AA6700198653 /* img0025.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0025.rgb; sourceTree = "<group>"; };
+		CEE57F301824AA6700198653 /* img0026.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0026.rgb; sourceTree = "<group>"; };
+		CEE57F311824AA6700198653 /* img0027.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0027.rgb; sourceTree = "<group>"; };
+		CEE57F321824AA6700198653 /* img0028.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0028.rgb; sourceTree = "<group>"; };
+		CEE57F331824AA6700198653 /* img0029.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0029.rgb; sourceTree = "<group>"; };
+		CEE57F341824AA6700198653 /* img0030.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0030.rgb; sourceTree = "<group>"; };
+		CEE57F351824AA6700198653 /* img0031.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0031.rgb; sourceTree = "<group>"; };
+		CEE57F361824AA6700198653 /* img0032.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0032.rgb; sourceTree = "<group>"; };
+		CEE57F371824AA6700198653 /* img0033.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0033.rgb; sourceTree = "<group>"; };
+		CEE57F381824AA6700198653 /* img0034.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0034.rgb; sourceTree = "<group>"; };
+		CEE57F391824AA6700198653 /* img0035.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0035.rgb; sourceTree = "<group>"; };
+		CEE57F3A1824AA6700198653 /* img0036.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0036.rgb; sourceTree = "<group>"; };
+		CEE57F3B1824AA6700198653 /* img0037.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0037.rgb; sourceTree = "<group>"; };
+		CEE57F3C1824AA6700198653 /* img0038.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0038.rgb; sourceTree = "<group>"; };
+		CEE57F3D1824AA6700198653 /* img0039.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0039.rgb; sourceTree = "<group>"; };
+		CEE57F3E1824AA6700198653 /* img0040.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0040.rgb; sourceTree = "<group>"; };
+		CEE57F3F1824AA6700198653 /* img0041.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0041.rgb; sourceTree = "<group>"; };
+		CEE57F401824AA6700198653 /* img0042.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0042.rgb; sourceTree = "<group>"; };
+		CEE57F411824AA6700198653 /* img0043.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0043.rgb; sourceTree = "<group>"; };
+		CEE57F421824AA6700198653 /* img0044.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0044.rgb; sourceTree = "<group>"; };
+		CEE57F431824AA6700198653 /* img0045.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0045.rgb; sourceTree = "<group>"; };
+		CEE57F441824AA6700198653 /* img0046.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0046.rgb; sourceTree = "<group>"; };
+		CEE57F451824AA6700198653 /* img0047.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0047.rgb; sourceTree = "<group>"; };
+		CEE57F461824AA6700198653 /* img0048.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0048.rgb; sourceTree = "<group>"; };
+		CEE57F471824AA6700198653 /* img0049.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0049.rgb; sourceTree = "<group>"; };
+		CEE57F481824AA6700198653 /* img0050.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0050.rgb; sourceTree = "<group>"; };
+		CEE57F491824AA6700198653 /* img0051.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0051.rgb; sourceTree = "<group>"; };
+		CEE57F4A1824AA6700198653 /* img0052.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0052.rgb; sourceTree = "<group>"; };
+		CEE57F4B1824AA6700198653 /* img0053.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0053.rgb; sourceTree = "<group>"; };
+		CEE57F4C1824AA6700198653 /* img0054.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0054.rgb; sourceTree = "<group>"; };
+		CEE57F4D1824AA6700198653 /* img0055.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0055.rgb; sourceTree = "<group>"; };
+		CEE57F4E1824AA6700198653 /* img0056.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0056.rgb; sourceTree = "<group>"; };
+		CEE57F4F1824AA6700198653 /* img0057.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0057.rgb; sourceTree = "<group>"; };
+		CEE57F501824AA6700198653 /* img0058.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0058.rgb; sourceTree = "<group>"; };
+		CEE57F511824AA6700198653 /* img0059.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0059.rgb; sourceTree = "<group>"; };
+		CEE57F521824AA6700198653 /* img0060.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0060.rgb; sourceTree = "<group>"; };
+		CEE57F531824AA6700198653 /* img0061.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0061.rgb; sourceTree = "<group>"; };
+		CEE57F541824AA6700198653 /* img0062.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0062.rgb; sourceTree = "<group>"; };
+		CEE57F551824AA6700198653 /* img0063.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0063.rgb; sourceTree = "<group>"; };
+		CEE57F561824AA6700198653 /* img0064.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0064.rgb; sourceTree = "<group>"; };
+		CEE57F571824AA6700198653 /* img0065.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0065.rgb; sourceTree = "<group>"; };
+		CEE57F581824AA6700198653 /* img0066.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0066.rgb; sourceTree = "<group>"; };
+		CEE57F591824AA6700198653 /* img0067.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0067.rgb; sourceTree = "<group>"; };
+		CEE57F5A1824AA6700198653 /* img0068.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0068.rgb; sourceTree = "<group>"; };
+		CEE57F5B1824AA6700198653 /* img0069.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0069.rgb; sourceTree = "<group>"; };
+		CEE57F5C1824AA6700198653 /* img0070.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0070.rgb; sourceTree = "<group>"; };
+		CEE57F5D1824AA6700198653 /* img0071.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0071.rgb; sourceTree = "<group>"; };
+		CEE57F5E1824AA6700198653 /* img0072.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0072.rgb; sourceTree = "<group>"; };
+		CEE57F5F1824AA6700198653 /* img0073.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0073.rgb; sourceTree = "<group>"; };
+		CEE57F601824AA6700198653 /* img0074.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0074.rgb; sourceTree = "<group>"; };
+		CEE57F611824AA6700198653 /* img0075.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0075.rgb; sourceTree = "<group>"; };
+		CEE57F621824AA6700198653 /* img0076.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0076.rgb; sourceTree = "<group>"; };
+		CEE57F631824AA6700198653 /* img0077.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0077.rgb; sourceTree = "<group>"; };
+		CEE57F641824AA6700198653 /* img0078.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0078.rgb; sourceTree = "<group>"; };
+		CEE57F651824AA6700198653 /* img0079.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0079.rgb; sourceTree = "<group>"; };
+		CEE57F661824AA6700198653 /* img0080.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0080.rgb; sourceTree = "<group>"; };
+		CEE57F671824AA6700198653 /* img0081.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0081.rgb; sourceTree = "<group>"; };
+		CEE57F681824AA6700198653 /* img0082.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0082.rgb; sourceTree = "<group>"; };
+		CEE57F691824AA6700198653 /* img0083.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0083.rgb; sourceTree = "<group>"; };
+		CEE57F6A1824AA6700198653 /* img0084.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0084.rgb; sourceTree = "<group>"; };
+		CEE57F6B1824AA6700198653 /* img0085.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0085.rgb; sourceTree = "<group>"; };
+		CEE57F6C1824AA6700198653 /* img0086.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0086.rgb; sourceTree = "<group>"; };
+		CEE57F6D1824AA6700198653 /* img0087.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0087.rgb; sourceTree = "<group>"; };
+		CEE57F6E1824AA6700198653 /* img0088.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0088.rgb; sourceTree = "<group>"; };
+		CEE57F6F1824AA6700198653 /* img0089.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0089.rgb; sourceTree = "<group>"; };
+		CEE57F701824AA6700198653 /* img0090.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0090.rgb; sourceTree = "<group>"; };
+		CEE57F711824AA6700198653 /* img0091.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = img0091.rgb; sourceTree = "<group>"; };
+		CEE57F721824AA6700198653 /* Kashiwagi.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kashiwagi.rgb; sourceTree = "<group>"; };
+		CEE57F731824AA6700198653 /* Mantourou.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mantourou.rgb; sourceTree = "<group>"; };
+		CEE57F741824AA6700198653 /* Masui.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = Masui.rgb; sourceTree = "<group>"; };
+		CEE57F751824AA6700198653 /* Minakuchi.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minakuchi.rgb; sourceTree = "<group>"; };
+		CEE57F761824AA6700198653 /* Shiomi.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = Shiomi.rgb; sourceTree = "<group>"; };
+		CEE57F771824AA6700198653 /* WING.rgb */ = {isa = PBXFileReference; lastKnownFileType = file; path = WING.rgb; sourceTree = "<group>"; };
+		CEE57F781824AA6700198653 /* WS_FTP.LOG */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WS_FTP.LOG; sourceTree = "<group>"; };
+		CEE57F7A1824AA6700198653 /* A-tosalonmiyazaki */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "A-tosalonmiyazaki"; sourceTree = "<group>"; };
+		CEE57F7B1824AA6700198653 /* Ajiteiyamazakiya */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ajiteiyamazakiya; sourceTree = "<group>"; };
+		CEE57F7C1824AA6700198653 /* All */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = All; sourceTree = "<group>"; };
+		CEE57F7D1824AA6700198653 /* AmusementPark */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AmusementPark; sourceTree = "<group>"; };
+		CEE57F7E1824AA6700198653 /* Aoi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Aoi; sourceTree = "<group>"; };
+		CEE57F7F1824AA6700198653 /* AoyamaGaishuuRyokuchi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AoyamaGaishuuRyokuchi; sourceTree = "<group>"; };
+		CEE57F801824AA6700198653 /* AoyamaIcchomeRyokuchi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AoyamaIcchomeRyokuchi; sourceTree = "<group>"; };
+		CEE57F811824AA6700198653 /* AoyamaKinrinKouen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AoyamaKinrinKouen; sourceTree = "<group>"; };
+		CEE57F821824AA6700198653 /* AoyamaSeisuien */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AoyamaSeisuien; sourceTree = "<group>"; };
+		CEE57F831824AA6700198653 /* AoyamaShizenRyokuchi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AoyamaShizenRyokuchi; sourceTree = "<group>"; };
+		CEE57F841824AA6700198653 /* AraIke */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AraIke; sourceTree = "<group>"; };
+		CEE57F851824AA6700198653 /* ArtMuseum */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ArtMuseum; sourceTree = "<group>"; };
+		CEE57F861824AA6700198653 /* Ashibiyahonpo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ashibiyahonpo; sourceTree = "<group>"; };
+		CEE57F871824AA6700198653 /* Ashura */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ashura; sourceTree = "<group>"; };
+		CEE57F881824AA6700198653 /* AsukaChuugakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AsukaChuugakkou; sourceTree = "<group>"; };
+		CEE57F891824AA6700198653 /* AsukaShougakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AsukaShougakkou; sourceTree = "<group>"; };
+		CEE57F8A1824AA6700198653 /* Bank */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bank; sourceTree = "<group>"; };
+		CEE57F8B1824AA6700198653 /* Bar */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bar; sourceTree = "<group>"; };
+		CEE57F8C1824AA6700198653 /* Bibure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bibure; sourceTree = "<group>"; };
+		CEE57F8D1824AA6700198653 /* BigguNara */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BigguNara; sourceTree = "<group>"; };
+		CEE57F8E1824AA6700198653 /* BodaiGawa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BodaiGawa; sourceTree = "<group>"; };
+		CEE57F8F1824AA6700198653 /* Bodaiin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bodaiin; sourceTree = "<group>"; };
+		CEE57F901824AA6700198653 /* BookStore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BookStore; sourceTree = "<group>"; };
+		CEE57F911824AA6700198653 /* BorantexiaSenta- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "BorantexiaSenta-"; sourceTree = "<group>"; };
+		CEE57F921824AA6700198653 /* Borden */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Borden; sourceTree = "<group>"; };
+		CEE57F931824AA6700198653 /* BoshiHukushiSenta- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "BoshiHukushiSenta-"; sourceTree = "<group>"; };
+		CEE57F941824AA6700198653 /* Boshiryou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Boshiryou; sourceTree = "<group>"; };
+		CEE57F951824AA6700198653 /* Bridge */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bridge; sourceTree = "<group>"; };
+		CEE57F961824AA6700198653 /* Broadcasting */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Broadcasting; sourceTree = "<group>"; };
+		CEE57F971824AA6700198653 /* BukkyouShiryouSenta- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "BukkyouShiryouSenta-"; sourceTree = "<group>"; };
+		CEE57F981824AA6700198653 /* Bunchosha */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bunchosha; sourceTree = "<group>"; };
+		CEE57F991824AA6700198653 /* BunkaKaikan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BunkaKaikan; sourceTree = "<group>"; };
+		CEE57F9A1824AA6700198653 /* Bus */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bus; sourceTree = "<group>"; };
+		CEE57F9B1824AA6700198653 /* Byakugouji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Byakugouji; sourceTree = "<group>"; };
+		CEE57F9C1824AA6700198653 /* Cafe */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cafe; sourceTree = "<group>"; };
+		CEE57F9D1824AA6700198653 /* Camping */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Camping; sourceTree = "<group>"; };
+		CEE57F9E1824AA6700198653 /* ChihouSaibansho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChihouSaibansho; sourceTree = "<group>"; };
+		CEE57F9F1824AA6700198653 /* ChijiKousha */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChijiKousha; sourceTree = "<group>"; };
+		CEE57FA01824AA6700198653 /* Chikara */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chikara; sourceTree = "<group>"; };
+		CEE57FA11824AA6700198653 /* Chisokuin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chisokuin; sourceTree = "<group>"; };
+		CEE57FA21824AA6700198653 /* ChisokuinNaraYaezakura */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChisokuinNaraYaezakura; sourceTree = "<group>"; };
+		CEE57FA31824AA6700198653 /* Chiyonoyatakemura */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chiyonoyatakemura; sourceTree = "<group>"; };
+		CEE57FA41824AA6700198653 /* Church */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Church; sourceTree = "<group>"; };
+		CEE57FA51824AA6700198653 /* Chuukindou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chuukindou; sourceTree = "<group>"; };
+		CEE57FA61824AA6700198653 /* Chuumon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chuumon; sourceTree = "<group>"; };
+		CEE57FA71824AA6700198653 /* ChuuouBudoujo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChuuouBudoujo; sourceTree = "<group>"; };
+		CEE57FA81824AA6700198653 /* ChuuouDainiBudoujo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChuuouDainiBudoujo; sourceTree = "<group>"; };
+		CEE57FA91824AA6700198653 /* ChuuouDainiTaiikukan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChuuouDainiTaiikukan; sourceTree = "<group>"; };
+		CEE57FAA1824AA6700198653 /* ChuuouJidouSoudanjo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChuuouJidouSoudanjo; sourceTree = "<group>"; };
+		CEE57FAB1824AA6700198653 /* ChuuouKouminkanKankouSenta- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ChuuouKouminkanKankouSenta-"; sourceTree = "<group>"; };
+		CEE57FAC1824AA6700198653 /* ChuuouTaiikukan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChuuouTaiikukan; sourceTree = "<group>"; };
+		CEE57FAD1824AA6700198653 /* ChuuouYuubinkyoku */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChuuouYuubinkyoku; sourceTree = "<group>"; };
+		CEE57FAE1824AA6700198653 /* Chuuseiin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Chuuseiin; sourceTree = "<group>"; };
+		CEE57FAF1824AA6700198653 /* ChuushouKigyouKaikan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChuushouKigyouKaikan; sourceTree = "<group>"; };
+		CEE57FB01824AA6700198653 /* Company */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Company; sourceTree = "<group>"; };
+		CEE57FB11824AA6700198653 /* Culture */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Culture; sourceTree = "<group>"; };
+		CEE57FB21824AA6700198653 /* DaianjiKyuukeidai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DaianjiKyuukeidai; sourceTree = "<group>"; };
+		CEE57FB31824AA6700198653 /* Daibutsuden */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Daibutsuden; sourceTree = "<group>"; };
+		CEE57FB41824AA6700198653 /* DaibutsuIke */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DaibutsuIke; sourceTree = "<group>"; };
+		CEE57FB51824AA6700198653 /* Daiei */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Daiei; sourceTree = "<group>"; };
+		CEE57FB61824AA6700198653 /* DaijouinTeien */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DaijouinTeien; sourceTree = "<group>"; };
+		CEE57FB71824AA6700198653 /* DaimonjiOkuribi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DaimonjiOkuribi; sourceTree = "<group>"; };
+		CEE57FB81824AA6700198653 /* DainiGoudouChousha */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DainiGoudouChousha; sourceTree = "<group>"; };
+		CEE57FB91824AA6700198653 /* DaisanGoudouChousha */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DaisanGoudouChousha; sourceTree = "<group>"; };
+		CEE57FBA1824AA6700198653 /* Denkouji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Denkouji; sourceTree = "<group>"; };
+		CEE57FBB1824AA6700198653 /* DepartmentStore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DepartmentStore; sourceTree = "<group>"; };
+		CEE57FBC1824AA6700198653 /* Dining */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dining; sourceTree = "<group>"; };
+		CEE57FBD1824AA6700198653 /* Dori-muRando */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Dori-muRando"; sourceTree = "<group>"; };
+		CEE57FBE1824AA6700198653 /* Edosan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Edosan; sourceTree = "<group>"; };
+		CEE57FBF1824AA6700198653 /* EiseiKenkyuusho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EiseiKenkyuusho; sourceTree = "<group>"; };
+		CEE57FC01824AA6700198653 /* ElementarySchool */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ElementarySchool; sourceTree = "<group>"; };
+		CEE57FC11824AA6700198653 /* EnuecchikeiNara */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EnuecchikeiNara; sourceTree = "<group>"; };
+		CEE57FC21824AA6700198653 /* Event */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Event; sourceTree = "<group>"; };
+		CEE57FC31824AA6700198653 /* Factory */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Factory; sourceTree = "<group>"; };
+		CEE57FC41824AA6700198653 /* FireStation */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FireStation; sourceTree = "<group>"; };
+		CEE57FC51824AA6700198653 /* FujinKaikan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FujinKaikan; sourceTree = "<group>"; };
+		CEE57FC61824AA6700198653 /* FujinSoudansho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FujinSoudansho; sourceTree = "<group>"; };
+		CEE57FC71824AA6700198653 /* FujitaUnkoudou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FujitaUnkoudou; sourceTree = "<group>"; };
+		CEE57FC81824AA6700198653 /* Gallery */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gallery; sourceTree = "<group>"; };
+		CEE57FC91824AA6700198653 /* GankoujiShoutouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GankoujiShoutouin; sourceTree = "<group>"; };
+		CEE57FCA1824AA6700198653 /* GankoujiTouato */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GankoujiTouato; sourceTree = "<group>"; };
+		CEE57FCB1824AA6700198653 /* Gen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gen; sourceTree = "<group>"; };
+		CEE57FCC1824AA6700198653 /* GenmeiTennouryou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GenmeiTennouryou; sourceTree = "<group>"; };
+		CEE57FCD1824AA6700198653 /* GenseiTennouryou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GenseiTennouryou; sourceTree = "<group>"; };
+		CEE57FCE1824AA6700198653 /* GijutsuKanrikaShikenjo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GijutsuKanrikaShikenjo; sourceTree = "<group>"; };
+		CEE57FCF1824AA6700198653 /* GohyakuTateyama */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GohyakuTateyama; sourceTree = "<group>"; };
+		CEE57FD01824AA6700198653 /* Gojuunotou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gojuunotou; sourceTree = "<group>"; };
+		CEE57FD11824AA6700198653 /* Gokouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Gokouin; sourceTree = "<group>"; };
+		CEE57FD21824AA6700198653 /* GokurakubouKeidai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GokurakubouKeidai; sourceTree = "<group>"; };
+		CEE57FD31824AA6700198653 /* GorufuSenta-1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GorufuSenta-1"; sourceTree = "<group>"; };
+		CEE57FD41824AA6700198653 /* GorufuSenta-2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GorufuSenta-2"; sourceTree = "<group>"; };
+		CEE57FD51824AA6700198653 /* GorufuSenta-3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "GorufuSenta-3"; sourceTree = "<group>"; };
+		CEE57FD61824AA6700198653 /* GoudouChousha */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GoudouChousha; sourceTree = "<group>"; };
+		CEE57FD71824AA6700198653 /* Graveyard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Graveyard; sourceTree = "<group>"; };
+		CEE57FD81824AA6700198653 /* Guraundo1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Guraundo1; sourceTree = "<group>"; };
+		CEE57FD91824AA6700198653 /* Guraundo2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Guraundo2; sourceTree = "<group>"; };
+		CEE57FDA1824AA6700198653 /* GyouzanoOushou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GyouzanoOushou; sourceTree = "<group>"; };
+		CEE57FDB1824AA6800198653 /* Hall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hall; sourceTree = "<group>"; };
+		CEE57FDC1824AA6800198653 /* Hanaurushi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hanaurushi; sourceTree = "<group>"; };
+		CEE57FDD1824AA6800198653 /* Hannyaji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hannyaji; sourceTree = "<group>"; };
+		CEE57FDE1824AA6800198653 /* Harishin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Harishin; sourceTree = "<group>"; };
+		CEE57FDF1824AA6800198653 /* HarunaByouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HarunaByouin; sourceTree = "<group>"; };
+		CEE57FE01824AA6800198653 /* HigashiHouko */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HigashiHouko; sourceTree = "<group>"; };
+		CEE57FE11824AA6800198653 /* Higashimuki */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Higashimuki; sourceTree = "<group>"; };
+		CEE57FE21824AA6800198653 /* HigashinosakaJidoukan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HigashinosakaJidoukan; sourceTree = "<group>"; };
+		CEE57FE31824AA6800198653 /* HigashinosakaRinpokan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HigashinosakaRinpokan; sourceTree = "<group>"; };
+		CEE57FE41824AA6800198653 /* HigashiShoubousho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HigashiShoubousho; sourceTree = "<group>"; };
+		CEE57FE51824AA6800198653 /* HigashiTerabayashiRenrakusho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HigashiTerabayashiRenrakusho; sourceTree = "<group>"; };
+		CEE57FE61824AA6800198653 /* Higashitouato */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Higashitouato; sourceTree = "<group>"; };
+		CEE57FE71824AA6800198653 /* HighSchool */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HighSchool; sourceTree = "<group>"; };
+		CEE57FE81824AA6800198653 /* HimuroJinja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HimuroJinja; sourceTree = "<group>"; };
+		CEE57FE91824AA6800198653 /* Hirasounaraten */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hirasounaraten; sourceTree = "<group>"; };
+		CEE57FEA1824AA6800198653 /* HistoricPlace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HistoricPlace; sourceTree = "<group>"; };
+		CEE57FEB1824AA6800198653 /* HojoKyougijo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HojoKyougijo; sourceTree = "<group>"; };
+		CEE57FEC1824AA6800198653 /* Hokensho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hokensho; sourceTree = "<group>"; };
+		CEE57FED1824AA6800198653 /* Hokkedou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hokkedou; sourceTree = "<group>"; };
+		CEE57FEE1824AA6800198653 /* Hokuendou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hokuendou; sourceTree = "<group>"; };
+		CEE57FEF1824AA6800198653 /* Hokurin'in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Hokurin'in"; sourceTree = "<group>"; };
+		CEE57FF01824AA6800198653 /* Honbou1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Honbou1; sourceTree = "<group>"; };
+		CEE57FF11824AA6800198653 /* Honbou2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Honbou2; sourceTree = "<group>"; };
+		CEE57FF21824AA6800198653 /* Honden */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Honden; sourceTree = "<group>"; };
+		CEE57FF31824AA6800198653 /* Honmyouji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Honmyouji; sourceTree = "<group>"; };
+		CEE57FF41824AA6800198653 /* Hospital */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hospital; sourceTree = "<group>"; };
+		CEE57FF51824AA6800198653 /* Hotel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hotel; sourceTree = "<group>"; };
+		CEE57FF61824AA6800198653 /* HoteruFujita */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoteruFujita; sourceTree = "<group>"; };
+		CEE57FF71824AA6800198653 /* Hougen'in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Hougen'in"; sourceTree = "<group>"; };
+		CEE57FF81824AA6800198653 /* Houjuin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Houjuin; sourceTree = "<group>"; };
+		CEE57FF91824AA6800198653 /* Houmotsuden */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Houmotsuden; sourceTree = "<group>"; };
+		CEE57FFA1824AA6800198653 /* HoumuGoudouChousha */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HoumuGoudouChousha; sourceTree = "<group>"; };
+		CEE57FFB1824AA6800198653 /* Hukuchiin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hukuchiin; sourceTree = "<group>"; };
+		CEE57FFC1824AA6800198653 /* Hukuuin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hukuuin; sourceTree = "<group>"; };
+		CEE57FFD1824AA6800198653 /* Hutaiji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hutaiji; sourceTree = "<group>"; };
+		CEE57FFE1824AA6800198653 /* HuzokuShougakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HuzokuShougakkou; sourceTree = "<group>"; };
+		CEE57FFF1824AA6800198653 /* Hyoushintei */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hyoushintei; sourceTree = "<group>"; };
+		CEE580001824AA6800198653 /* Ichijouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ichijouin; sourceTree = "<group>"; };
+		CEE580011824AA6800198653 /* IchijouKoukou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IchijouKoukou; sourceTree = "<group>"; };
+		CEE580021824AA6800198653 /* IchinoTorii */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IchinoTorii; sourceTree = "<group>"; };
+		CEE580031824AA6800198653 /* IkedaGankoudou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IkedaGankoudou; sourceTree = "<group>"; };
+		CEE580041824AA6800198653 /* Ikkyuu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ikkyuu; sourceTree = "<group>"; };
+		CEE580051824AA6800198653 /* ImanishikeShoin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ImanishikeShoin; sourceTree = "<group>"; };
+		CEE580061824AA6800198653 /* ImanishikeShoinChamise */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ImanishikeShoinChamise; sourceTree = "<group>"; };
+		CEE580071824AA6800198653 /* InadaByouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = InadaByouin; sourceTree = "<group>"; };
+		CEE580081824AA6800198653 /* IsagawaJinja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IsagawaJinja; sourceTree = "<group>"; };
+		CEE580091824AA6800198653 /* IsagawaYouchien */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IsagawaYouchien; sourceTree = "<group>"; };
+		CEE5800A1824AA6800198653 /* Isokawa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Isokawa; sourceTree = "<group>"; };
+		CEE5800B1824AA6800198653 /* Isshindou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Isshindou; sourceTree = "<group>"; };
+		CEE5800C1824AA6800198653 /* Isuien */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Isuien; sourceTree = "<group>"; };
+		CEE5800D1824AA6800198653 /* IsuienSanshuu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IsuienSanshuu; sourceTree = "<group>"; };
+		CEE5800E1824AA6800198653 /* ItakuraGansoutei */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ItakuraGansoutei; sourceTree = "<group>"; };
+		CEE5800F1824AA6800198653 /* Izakaya */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Izakaya; sourceTree = "<group>"; };
+		CEE580101824AA6800198653 /* Janbori- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Janbori-"; sourceTree = "<group>"; };
+		CEE580111824AA6800198653 /* Jeia-ruNaraeki */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Jeia-ruNaraeki"; sourceTree = "<group>"; };
+		CEE580121824AA6800198653 /* Jentori- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Jentori-"; sourceTree = "<group>"; };
+		CEE580131824AA6800198653 /* Jihouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jihouin; sourceTree = "<group>"; };
+		CEE580141824AA6800198653 /* Jizouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jizouin; sourceTree = "<group>"; };
+		CEE580151824AA6800198653 /* JoseiSenta- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "JoseiSenta-"; sourceTree = "<group>"; };
+		CEE580161824AA6800198653 /* JoshidaiFuzokuKoukou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JoshidaiFuzokuKoukou; sourceTree = "<group>"; };
+		CEE580171824AA6800198653 /* Joufukuji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Joufukuji; sourceTree = "<group>"; };
+		CEE580181824AA6800198653 /* JR */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JR; sourceTree = "<group>"; };
+		CEE580191824AA6800198653 /* Jukkokudai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jukkokudai; sourceTree = "<group>"; };
+		CEE5801A1824AA6800198653 /* JuniorHighSchool */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JuniorHighSchool; sourceTree = "<group>"; };
+		CEE5801B1824AA6800198653 /* Juurin'in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Juurin'in"; sourceTree = "<group>"; };
+		CEE5801C1824AA6800198653 /* KagamiIke */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KagamiIke; sourceTree = "<group>"; };
+		CEE5801D1824AA6800198653 /* KagamiJinja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KagamiJinja; sourceTree = "<group>"; };
+		CEE5801E1824AA6800198653 /* Kagamitei */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kagamitei; sourceTree = "<group>"; };
+		CEE5801F1824AA6800198653 /* Kaidan'in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Kaidan'in"; sourceTree = "<group>"; };
+		CEE580201824AA6800198653 /* Kaidandou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kaidandou; sourceTree = "<group>"; };
+		CEE580211824AA6800198653 /* KaikaTennouryou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KaikaTennouryou; sourceTree = "<group>"; };
+		CEE580221824AA6800198653 /* Kaizandou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kaizandou; sourceTree = "<group>"; };
+		CEE580231824AA6800198653 /* Kaminobou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kaminobou; sourceTree = "<group>"; };
+		CEE580241824AA6800198653 /* Kan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kan; sourceTree = "<group>"; };
+		CEE580251824AA6800198653 /* Kangakuin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kangakuin; sourceTree = "<group>"; };
+		CEE580261824AA6800198653 /* KangoGakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KangoGakkou; sourceTree = "<group>"; };
+		CEE580271824AA6800198653 /* KangouJinja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KangouJinja; sourceTree = "<group>"; };
+		CEE580281824AA6800198653 /* Kanjinsho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kanjinsho; sourceTree = "<group>"; };
+		CEE580291824AA6800198653 /* KankuuBasu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KankuuBasu; sourceTree = "<group>"; };
+		CEE5802A1824AA6800198653 /* Kannon'in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Kannon'in"; sourceTree = "<group>"; };
+		CEE5802B1824AA6800198653 /* KansaiHonsen1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KansaiHonsen1; sourceTree = "<group>"; };
+		CEE5802C1824AA6800198653 /* KansaiHonsen2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KansaiHonsen2; sourceTree = "<group>"; };
+		CEE5802D1824AA6800198653 /* Karikindou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Karikindou; sourceTree = "<group>"; };
+		CEE5802E1824AA6800198653 /* Kashiwagi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kashiwagi; sourceTree = "<group>"; };
+		CEE5802F1824AA6800198653 /* Kasugaan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kasugaan; sourceTree = "<group>"; };
+		CEE580301824AA6800198653 /* KasugaChuugakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KasugaChuugakkou; sourceTree = "<group>"; };
+		CEE580311824AA6800198653 /* KasugaHoteru */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KasugaHoteru; sourceTree = "<group>"; };
+		CEE580321824AA6800198653 /* KasugaJinjaNagi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KasugaJinjaNagi; sourceTree = "<group>"; };
+		CEE580331824AA6800198653 /* KasugaKouminkan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KasugaKouminkan; sourceTree = "<group>"; };
+		CEE580341824AA6800198653 /* KasugaNinaiDyaya */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KasugaNinaiDyaya; sourceTree = "<group>"; };
+		CEE580351824AA6800198653 /* KasugaOkuyamaShuuyuudouro */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KasugaOkuyamaShuuyuudouro; sourceTree = "<group>"; };
+		CEE580361824AA6800198653 /* KasugaTaisha */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KasugaTaisha; sourceTree = "<group>"; };
+		CEE580371824AA6800198653 /* KasugaTaishaKeidai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KasugaTaishaKeidai; sourceTree = "<group>"; };
+		CEE580381824AA6800198653 /* Kasugataisharyouri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kasugataisharyouri; sourceTree = "<group>"; };
+		CEE580391824AA6800198653 /* Kasugayama */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kasugayama; sourceTree = "<group>"; };
+		CEE5803A1824AA6800198653 /* KasugayamaGenshirin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KasugayamaGenshirin; sourceTree = "<group>"; };
+		CEE5803B1824AA6800198653 /* KasugayamaYuuhodou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KasugayamaYuuhodou; sourceTree = "<group>"; };
+		CEE5803C1824AA6800198653 /* Kayakushidou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kayakushidou; sourceTree = "<group>"; };
+		CEE5803D1824AA6800198653 /* KayouHimegamiDyaya */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KayouHimegamiDyaya; sourceTree = "<group>"; };
+		CEE5803E1824AA6800198653 /* Kenchou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kenchou; sourceTree = "<group>"; };
+		CEE5803F1824AA6800198653 /* KenkeiHonbu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KenkeiHonbu; sourceTree = "<group>"; };
+		CEE580401824AA6800198653 /* KenkeiTetsudouKeisatsu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KenkeiTetsudouKeisatsu; sourceTree = "<group>"; };
+		CEE580411824AA6800198653 /* KenKyouikuKaikan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KenKyouikuKaikan; sourceTree = "<group>"; };
+		CEE580421824AA6800198653 /* KenKyouikuSenta- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "KenKyouikuSenta-"; sourceTree = "<group>"; };
+		CEE580431824AA6800198653 /* KenKyouikuSenta-1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "KenKyouikuSenta-1"; sourceTree = "<group>"; };
+		CEE580441824AA6800198653 /* KenritsuBijutukan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KenritsuBijutukan; sourceTree = "<group>"; };
+		CEE580451824AA6800198653 /* KenritsuToshokan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KenritsuToshokan; sourceTree = "<group>"; };
+		CEE580461824AA6800198653 /* Kikuokakougei */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kikuokakougei; sourceTree = "<group>"; };
+		CEE580471824AA6800198653 /* Kikusuirou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kikusuirou; sourceTree = "<group>"; };
+		CEE580481824AA6800198653 /* Kina */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kina; sourceTree = "<group>"; };
+		CEE580491824AA6800198653 /* Kinasa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kinasa; sourceTree = "<group>"; };
+		CEE5804A1824AA6800198653 /* KinderGarten */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KinderGarten; sourceTree = "<group>"; };
+		CEE5804B1824AA6800198653 /* KinrouSeishounenHome */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KinrouSeishounenHome; sourceTree = "<group>"; };
+		CEE5804C1824AA6800198653 /* Kinshaji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kinshaji; sourceTree = "<group>"; };
+		CEE5804D1824AA6800198653 /* Kintetsu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kintetsu; sourceTree = "<group>"; };
+		CEE5804E1824AA6800198653 /* KintetsuJikokuhyou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KintetsuJikokuhyou; sourceTree = "<group>"; };
+		CEE5804F1824AA6800198653 /* KintetsuNaraEki */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KintetsuNaraEki; sourceTree = "<group>"; };
+		CEE580501824AA6800198653 /* KintetsuNarasen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KintetsuNarasen; sourceTree = "<group>"; };
+		CEE580511824AA6800198653 /* Kishoudai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kishoudai; sourceTree = "<group>"; };
+		CEE580521824AA6800198653 /* KitayamaJuuhakkenko */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KitayamaJuuhakkenko; sourceTree = "<group>"; };
+		CEE580531824AA6800198653 /* Kobaien */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kobaien; sourceTree = "<group>"; };
+		CEE580541824AA6800198653 /* Kogetu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kogetu; sourceTree = "<group>"; };
+		CEE580551824AA6800198653 /* KokudouKojiJimusho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KokudouKojiJimusho; sourceTree = "<group>"; };
+		CEE580561824AA6800198653 /* Kokuhoukan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kokuhoukan; sourceTree = "<group>"; };
+		CEE580571824AA6800198653 /* KokuritsuHakubutsukan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KokuritsuHakubutsukan; sourceTree = "<group>"; };
+		CEE580581824AA6800198653 /* Komugiko */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Komugiko; sourceTree = "<group>"; };
+		CEE580591824AA6800198653 /* Konbuin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Konbuin; sourceTree = "<group>"; };
+		CEE5805A1824AA6800198653 /* KouanChousaJimusho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KouanChousaJimusho; sourceTree = "<group>"; };
+		CEE5805B1824AA6800198653 /* Kouhukuji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kouhukuji; sourceTree = "<group>"; };
+		CEE5805C1824AA6800198653 /* KouhukujiKyuukeidai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KouhukujiKyuukeidai; sourceTree = "<group>"; };
+		CEE5805D1824AA6800198653 /* KoukuHaisuichi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KoukuHaisuichi; sourceTree = "<group>"; };
+		CEE5805E1824AA6800198653 /* Kounoike */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kounoike; sourceTree = "<group>"; };
+		CEE5805F1824AA6800198653 /* KounoikeKyuujo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KounoikeKyuujo; sourceTree = "<group>"; };
+		CEE580601824AA6800198653 /* KounoikeUndoukouen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KounoikeUndoukouen; sourceTree = "<group>"; };
+		CEE580611824AA6800198653 /* Kourinji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kourinji; sourceTree = "<group>"; };
+		CEE580621824AA6800198653 /* Kouunji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kouunji; sourceTree = "<group>"; };
+		CEE580631824AA6800198653 /* Kura */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kura; sourceTree = "<group>"; };
+		CEE580641824AA6800198653 /* KurokamiyamaSupo-tsuSenta- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "KurokamiyamaSupo-tsuSenta-"; sourceTree = "<group>"; };
+		CEE580651824AA6800198653 /* Kusukusu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kusukusu; sourceTree = "<group>"; };
+		CEE580661824AA6800198653 /* Kuukaiji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kuukaiji; sourceTree = "<group>"; };
+		CEE580671824AA6800198653 /* Kyoubate */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kyoubate; sourceTree = "<group>"; };
+		CEE580681824AA6800198653 /* KyouikuDaigaku */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KyouikuDaigaku; sourceTree = "<group>"; };
+		CEE580691824AA6800198653 /* Kyuudoujou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Kyuudoujou; sourceTree = "<group>"; };
+		CEE5806A1824AA6800198653 /* Library */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Library; sourceTree = "<group>"; };
+		CEE5806B1824AA6800198653 /* MaguroGoya */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MaguroGoya; sourceTree = "<group>"; };
+		CEE5806C1824AA6800198653 /* Man'youen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Man'youen"; sourceTree = "<group>"; };
+		CEE5806D1824AA6800198653 /* Man'youShokubutsuen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Man'youShokubutsuen"; sourceTree = "<group>"; };
+		CEE5806E1824AA6800198653 /* Manda-repinokio */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Manda-repinokio"; sourceTree = "<group>"; };
+		CEE5806F1824AA6800198653 /* Manmandou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Manmandou; sourceTree = "<group>"; };
+		CEE580701824AA6800198653 /* Mantourou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mantourou; sourceTree = "<group>"; };
+		CEE580711824AA6800198653 /* Masagoya */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Masagoya; sourceTree = "<group>"; };
+		CEE580721824AA6800198653 /* Masui */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Masui; sourceTree = "<group>"; };
+		CEE580731824AA6800198653 /* MatsukuraByouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MatsukuraByouin; sourceTree = "<group>"; };
+		CEE580741824AA6800198653 /* MIdorigaokaHaisuishorijo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MIdorigaokaHaisuishorijo; sourceTree = "<group>"; };
+		CEE580751824AA6800198653 /* MidorigaokaJousuijou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MidorigaokaJousuijou; sourceTree = "<group>"; };
+		CEE580761824AA6800198653 /* Midorinoie */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Midorinoie; sourceTree = "<group>"; };
+		CEE580771824AA6800198653 /* MidorinoOka */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MidorinoOka; sourceTree = "<group>"; };
+		CEE580781824AA6800198653 /* MikasaKouminkan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MikasaKouminkan; sourceTree = "<group>"; };
+		CEE580791824AA6800198653 /* MikasaOnsenkyou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MikasaOnsenkyou; sourceTree = "<group>"; };
+		CEE5807A1824AA6800198653 /* MikasaReien */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MikasaReien; sourceTree = "<group>"; };
+		CEE5807B1824AA6800198653 /* Mikasayama */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mikasayama; sourceTree = "<group>"; };
+		CEE5807C1824AA6800198653 /* Minakuchi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Minakuchi; sourceTree = "<group>"; };
+		CEE5807D1824AA6800198653 /* MisoKaikan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MisoKaikan; sourceTree = "<group>"; };
+		CEE5807E1824AA6800198653 /* MitakeKyoukai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MitakeKyoukai; sourceTree = "<group>"; };
+		CEE5807F1824AA6800198653 /* MitamaJinja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MitamaJinja; sourceTree = "<group>"; };
+		CEE580801824AA6800198653 /* MiyakoHoteru */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MiyakoHoteru; sourceTree = "<group>"; };
+		CEE580811824AA6800198653 /* Mochiidono */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mochiidono; sourceTree = "<group>"; };
+		CEE580821824AA6800198653 /* Momoya */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Momoya; sourceTree = "<group>"; };
+		CEE580831824AA6800198653 /* Morinaraduketen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Morinaraduketen; sourceTree = "<group>"; };
+		CEE580841824AA6800198653 /* MoujinHukushiSenta- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MoujinHukushiSenta-"; sourceTree = "<group>"; };
+		CEE580851824AA6800198653 /* Mountain */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mountain; sourceTree = "<group>"; };
+		CEE580861824AA6800198653 /* MovieTheater */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MovieTheater; sourceTree = "<group>"; };
+		CEE580871824AA6800198653 /* MurasakiSanjoudoori */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MurasakiSanjoudoori; sourceTree = "<group>"; };
+		CEE580881824AA6800198653 /* Museum */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Museum; sourceTree = "<group>"; };
+		CEE580891824AA6800198653 /* Myoukenguu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Myoukenguu; sourceTree = "<group>"; };
+		CEE5808A1824AA6800198653 /* N */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = N; sourceTree = "<group>"; };
+		CEE5808B1824AA6800198653 /* Nagasakiya */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nagasakiya; sourceTree = "<group>"; };
+		CEE5808C1824AA6800198653 /* NakanogawaKyuugijou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NakanogawaKyuugijou; sourceTree = "<group>"; };
+		CEE5808D1824AA6800198653 /* Nan'endou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Nan'endou"; sourceTree = "<group>"; };
+		CEE5808E1824AA6800198653 /* Nandaimon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nandaimon; sourceTree = "<group>"; };
+		CEE5808F1824AA6800198653 /* Nandaimon'ato */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Nandaimon'ato"; sourceTree = "<group>"; };
+		CEE580901824AA6800198653 /* NantoGinkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NantoGinkou; sourceTree = "<group>"; };
+		CEE580911824AA6800198653 /* NaraByouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraByouin; sourceTree = "<group>"; };
+		CEE580921824AA6800198653 /* NaraHoteru */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraHoteru; sourceTree = "<group>"; };
+		CEE580931824AA6800198653 /* NaraIkueiKoukou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraIkueiKoukou; sourceTree = "<group>"; };
+		CEE580941824AA6800198653 /* NaraIkueiShougakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraIkueiShougakkou; sourceTree = "<group>"; };
+		CEE580951824AA6800198653 /* NaraJoshiDaigaku */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraJoshiDaigaku; sourceTree = "<group>"; };
+		CEE580961824AA6800198653 /* NaraJoshidaiKokusaiKouryuuKaikan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraJoshidaiKokusaiKouryuuKaikan; sourceTree = "<group>"; };
+		CEE580971824AA6800198653 /* Narakankoukan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Narakankoukan; sourceTree = "<group>"; };
+		CEE580981824AA6800198653 /* NaraKateiSaibansho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraKateiSaibansho; sourceTree = "<group>"; };
+		CEE580991824AA6800198653 /* NaraKouen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraKouen; sourceTree = "<group>"; };
+		CEE5809A1824AA6800198653 /* NaraKouenkan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraKouenkan; sourceTree = "<group>"; };
+		CEE5809B1824AA6800198653 /* NaraKoukou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraKoukou; sourceTree = "<group>"; };
+		CEE5809C1824AA6800198653 /* NaraKousen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraKousen; sourceTree = "<group>"; };
+		CEE5809D1824AA6800198653 /* NaraKoutsuu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraKoutsuu; sourceTree = "<group>"; };
+		CEE5809E1824AA6800198653 /* NarakoutsuuKankousha */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NarakoutsuuKankousha; sourceTree = "<group>"; };
+		CEE5809F1824AA6800198653 /* NaraKyouikudaiFuzokuChuugakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraKyouikudaiFuzokuChuugakkou; sourceTree = "<group>"; };
+		CEE580A01824AA6800198653 /* NaramachiSenta- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NaramachiSenta-"; sourceTree = "<group>"; };
+		CEE580A11824AA6800198653 /* NaramachiShiryoukan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaramachiShiryoukan; sourceTree = "<group>"; };
+		CEE580A21824AA6800198653 /* NaraOkuyamaDoraibuuxei */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraOkuyamaDoraibuuxei; sourceTree = "<group>"; };
+		CEE580A31824AA6800198653 /* NaraTerebi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NaraTerebi; sourceTree = "<group>"; };
+		CEE580A41824AA6800198653 /* NarayamaEki */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NarayamaEki; sourceTree = "<group>"; };
+		CEE580A51824AA6800198653 /* NarayamaOodoori */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NarayamaOodoori; sourceTree = "<group>"; };
+		CEE580A61824AA6800198653 /* NaraYu-suHosuteru */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NaraYu-suHosuteru"; sourceTree = "<group>"; };
+		CEE580A71824AA6800198653 /* NarazakaHaisuichi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NarazakaHaisuichi; sourceTree = "<group>"; };
+		CEE580A81824AA6800198653 /* NarazuhikoJinja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NarazuhikoJinja; sourceTree = "<group>"; };
+		CEE580A91824AA6800198653 /* NatomiyamaHaka */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NatomiyamaHaka; sourceTree = "<group>"; };
+		CEE580AA1824AA6800198653 /* Nayakoubou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nayakoubou; sourceTree = "<group>"; };
+		CEE580AB1824AA6800198653 /* NeirakuBijutukan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NeirakuBijutukan; sourceTree = "<group>"; };
+		CEE580AC1824AA6800198653 /* Nenbutsudou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nenbutsudou; sourceTree = "<group>"; };
+		CEE580AD1824AA6800198653 /* Nichimo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nichimo; sourceTree = "<group>"; };
+		CEE580AE1824AA6800198653 /* Nigatsudou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nigatsudou; sourceTree = "<group>"; };
+		CEE580AF1824AA6800198653 /* NigatsudounoEma */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NigatsudounoEma; sourceTree = "<group>"; };
+		CEE580B01824AA6800198653 /* NightSpot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NightSpot; sourceTree = "<group>"; };
+		CEE580B11824AA6800198653 /* NinoTorii */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NinoTorii; sourceTree = "<group>"; };
+		CEE580B21824AA6800198653 /* NishiHouko */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NishiHouko; sourceTree = "<group>"; };
+		CEE580B31824AA6800198653 /* NishinokyouJitenshadou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NishinokyouJitenshadou; sourceTree = "<group>"; };
+		CEE580B41824AA6800198653 /* NishinosakaRinpokan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NishinosakaRinpokan; sourceTree = "<group>"; };
+		CEE580B51824AA6800198653 /* NishiuraByouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NishiuraByouin; sourceTree = "<group>"; };
+		CEE580B61824AA6800198653 /* Notogawa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Notogawa; sourceTree = "<group>"; };
+		CEE580B71824AA6800198653 /* NoukyouKaikan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NoukyouKaikan; sourceTree = "<group>"; };
+		CEE580B81824AA6800198653 /* O-rudexi-zu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "O-rudexi-zu"; sourceTree = "<group>"; };
+		CEE580B91824AA6800198653 /* OkayaByouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OkayaByouin; sourceTree = "<group>"; };
+		CEE580BA1824AA6800198653 /* OkayaByouin'Yakushi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "OkayaByouin'Yakushi"; sourceTree = "<group>"; };
+		CEE580BB1824AA6800198653 /* Okuta */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Okuta; sourceTree = "<group>"; };
+		CEE580BC1824AA6800198653 /* OldGrave */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OldGrave; sourceTree = "<group>"; };
+		CEE580BD1824AA6800198653 /* OldTown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OldTown; sourceTree = "<group>"; };
+		CEE580BE1824AA6800198653 /* Omizutori */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Omizutori; sourceTree = "<group>"; };
+		CEE580BF1824AA6800198653 /* OomiyaDoori */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OomiyaDoori; sourceTree = "<group>"; };
+		CEE580C01824AA6800198653 /* OomiyaShougakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OomiyaShougakkou; sourceTree = "<group>"; };
+		CEE580C11824AA6800198653 /* OomoriIke */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OomoriIke; sourceTree = "<group>"; };
+		CEE580C21824AA6800198653 /* OoyamamorinoHaka */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OoyamamorinoHaka; sourceTree = "<group>"; };
+		CEE580C31824AA6800198653 /* Ooyuya1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ooyuya1; sourceTree = "<group>"; };
+		CEE580C41824AA6800198653 /* Ooyuya2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ooyuya2; sourceTree = "<group>"; };
+		CEE580C51824AA6800198653 /* OrientoKan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OrientoKan; sourceTree = "<group>"; };
+		CEE580C61824AA6800198653 /* Park */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Park; sourceTree = "<group>"; };
+		CEE580C71824AA6800198653 /* Pepita */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pepita; sourceTree = "<group>"; };
+		CEE580C81824AA6800198653 /* Police */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Police; sourceTree = "<group>"; };
+		CEE580C91824AA6800198653 /* Pond */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pond; sourceTree = "<group>"; };
+		CEE580CA1824AA6800198653 /* PostOffice */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PostOffice; sourceTree = "<group>"; };
+		CEE580CB1824AA6800198653 /* Press */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Press; sourceTree = "<group>"; };
+		CEE580CC1824AA6800198653 /* Pu-ru */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Pu-ru"; sourceTree = "<group>"; };
+		CEE580CD1824AA6800198653 /* Public */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Public; sourceTree = "<group>"; };
+		CEE580CE1824AA6800198653 /* PublicHall */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PublicHall; sourceTree = "<group>"; };
+		CEE580CF1824AA6800198653 /* PublicOffice */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PublicOffice; sourceTree = "<group>"; };
+		CEE580D01824AA6800198653 /* Publisher */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Publisher; sourceTree = "<group>"; };
+		CEE580D11824AA6800198653 /* Raigouji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Raigouji; sourceTree = "<group>"; };
+		CEE580D21824AA6800198653 /* Reigen'in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Reigen'in"; sourceTree = "<group>"; };
+		CEE580D31824AA6800198653 /* Renchouji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Renchouji; sourceTree = "<group>"; };
+		CEE580D41824AA6800198653 /* Renjouji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Renjouji; sourceTree = "<group>"; };
+		CEE580D51824AA6800198653 /* Restaurant */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Restaurant; sourceTree = "<group>"; };
+		CEE580D61824AA6800198653 /* RikujouKyougijou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RikujouKyougijou; sourceTree = "<group>"; };
+		CEE580D71824AA6800198653 /* River */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = River; sourceTree = "<group>"; };
+		CEE580D81824AA6800198653 /* Road */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Road; sourceTree = "<group>"; };
+		CEE580D91824AA6800198653 /* Rokuen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rokuen; sourceTree = "<group>"; };
+		CEE580DA1824AA6800198653 /* RoudouKaikan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RoudouKaikan; sourceTree = "<group>"; };
+		CEE580DB1824AA6800198653 /* Roumon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Roumon; sourceTree = "<group>"; };
+		CEE580DC1824AA6800198653 /* Roushunnoie */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Roushunnoie; sourceTree = "<group>"; };
+		CEE580DD1824AA6900198653 /* RumisuShijimi1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RumisuShijimi1; sourceTree = "<group>"; };
+		CEE580DE1824AA6900198653 /* RumisuShijimi2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RumisuShijimi2; sourceTree = "<group>"; };
+		CEE580DF1824AA6900198653 /* Ryouzanpaku */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ryouzanpaku; sourceTree = "<group>"; };
+		CEE580E01824AA6900198653 /* RyouzanpakuBekkan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RyouzanpakuBekkan; sourceTree = "<group>"; };
+		CEE580E11824AA6900198653 /* Ryuubidou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ryuubidou; sourceTree = "<group>"; };
+		CEE580E21824AA6900198653 /* RyuuryouChouseichi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RyuuryouChouseichi; sourceTree = "<group>"; };
+		CEE580E31824AA6900198653 /* Ryuushouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ryuushouin; sourceTree = "<group>"; };
+		CEE580E41824AA6900198653 /* Ryuuzouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ryuuzouin; sourceTree = "<group>"; };
+		CEE580E51824AA6900198653 /* SaboBashi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SaboBashi; sourceTree = "<group>"; };
+		CEE580E61824AA6900198653 /* SabodaiRyokuchi1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SabodaiRyokuchi1; sourceTree = "<group>"; };
+		CEE580E71824AA6900198653 /* SabodaiRyokuchi2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SabodaiRyokuchi2; sourceTree = "<group>"; };
+		CEE580E81824AA6900198653 /* SabodaiRyokuchi4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SabodaiRyokuchi4; sourceTree = "<group>"; };
+		CEE580E91824AA6900198653 /* SabodaiSHougakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SabodaiSHougakkou; sourceTree = "<group>"; };
+		CEE580EA1824AA6900198653 /* Sabogawa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sabogawa; sourceTree = "<group>"; };
+		CEE580EB1824AA6900198653 /* SabogawaShougakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SabogawaShougakkou; sourceTree = "<group>"; };
+		CEE580EC1824AA6900198653 /* SaboJusanjo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SaboJusanjo; sourceTree = "<group>"; };
+		CEE580ED1824AA6900198653 /* SaboShougakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SaboShougakkou; sourceTree = "<group>"; };
+		CEE580EE1824AA6900198653 /* SaboyamaKinrinKouen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SaboyamaKinrinKouen; sourceTree = "<group>"; };
+		CEE580EF1824AA6900198653 /* SaboyamaMinamiryou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SaboyamaMinamiryou; sourceTree = "<group>"; };
+		CEE580F01824AA6900198653 /* SagiIke */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SagiIke; sourceTree = "<group>"; };
+		CEE580F11824AA6900198653 /* Saihouji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Saihouji; sourceTree = "<group>"; };
+		CEE580F21824AA6900198653 /* Saikindouato */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Saikindouato; sourceTree = "<group>"; };
+		CEE580F31824AA6900198653 /* SaimiShougakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SaimiShougakkou; sourceTree = "<group>"; };
+		CEE580F41824AA6900198653 /* Saitouato */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Saitouato; sourceTree = "<group>"; };
+		CEE580F51824AA6900198653 /* SakuraiByouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SakuraiByouin; sourceTree = "<group>"; };
+		CEE580F61824AA6900198653 /* Sakuraisen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sakuraisen; sourceTree = "<group>"; };
+		CEE580F71824AA6900198653 /* SamariyaKyokai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SamariyaKyokai; sourceTree = "<group>"; };
+		CEE580F81824AA6900198653 /* SamaSama */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SamaSama; sourceTree = "<group>"; };
+		CEE580F91824AA6900198653 /* SanjouDoori */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SanjouDoori; sourceTree = "<group>"; };
+		CEE580FA1824AA6900198653 /* Sanjuunotou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sanjuunotou; sourceTree = "<group>"; };
+		CEE580FB1824AA6900198653 /* Sarusawaike */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sarusawaike; sourceTree = "<group>"; };
+		CEE580FC1824AA6900198653 /* SasaokaJinja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SasaokaJinja; sourceTree = "<group>"; };
+		CEE580FD1824AA6900198653 /* Sashizudou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sashizudou; sourceTree = "<group>"; };
+		CEE580FE1824AA6900198653 /* SawaiByouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SawaiByouin; sourceTree = "<group>"; };
+		CEE580FF1824AA6900198653 /* ScenicPlace */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ScenicPlace; sourceTree = "<group>"; };
+		CEE581001824AA6900198653 /* School */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = School; sourceTree = "<group>"; };
+		CEE581011824AA6900198653 /* Seibidou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Seibidou; sourceTree = "<group>"; };
+		CEE581021824AA6900198653 /* Seikan'in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Seikan'in"; sourceTree = "<group>"; };
+		CEE581031824AA6900198653 /* SeikatsuKagakuSenta- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "SeikatsuKagakuSenta-"; sourceTree = "<group>"; };
+		CEE581041824AA6900198653 /* Seikyou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Seikyou; sourceTree = "<group>"; };
+		CEE581051824AA6900198653 /* Seinennoie */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Seinennoie; sourceTree = "<group>"; };
+		CEE581061824AA6900198653 /* Seiryouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Seiryouin; sourceTree = "<group>"; };
+		CEE581071824AA6900198653 /* SeishounenJidoukaikan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SeishounenJidoukaikan; sourceTree = "<group>"; };
+		CEE581081824AA6900198653 /* SeishounenKaikan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SeishounenKaikan; sourceTree = "<group>"; };
+		CEE581091824AA6900198653 /* SekisuiKagaku */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SekisuiKagaku; sourceTree = "<group>"; };
+		CEE5810A1824AA6900198653 /* Senjuan'Yoshimune */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Senjuan'Yoshimune"; sourceTree = "<group>"; };
+		CEE5810B1824AA6900198653 /* Senjudou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Senjudou; sourceTree = "<group>"; };
+		CEE5810C1824AA6900198653 /* Sexe-ruDarujan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Sexe-ruDarujan"; sourceTree = "<group>"; };
+		CEE5810D1824AA6900198653 /* ShakaiHokenJimusho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShakaiHokenJimusho; sourceTree = "<group>"; };
+		CEE5810E1824AA6900198653 /* ShakaiHukushiKaikan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShakaiHukushiKaikan; sourceTree = "<group>"; };
+		CEE5810F1824AA6900198653 /* Sharp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sharp; sourceTree = "<group>"; };
+		CEE581101824AA6900198653 /* ShashinBijutsukan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShashinBijutsukan; sourceTree = "<group>"; };
+		CEE581111824AA6900198653 /* Shiduka */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shiduka; sourceTree = "<group>"; };
+		CEE581121824AA6900198653 /* ShiganaoyaKyuukyo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShiganaoyaKyuukyo; sourceTree = "<group>"; };
+		CEE581131824AA6900198653 /* Shigatsudou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shigatsudou; sourceTree = "<group>"; };
+		CEE581141824AA6900198653 /* ShikaGawa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShikaGawa; sourceTree = "<group>"; };
+		CEE581151824AA6900198653 /* Shikitei */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shikitei; sourceTree = "<group>"; };
+		CEE581161824AA6900198653 /* Shin'Ishibashi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Shin'Ishibashi"; sourceTree = "<group>"; };
+		CEE581171824AA6900198653 /* Shin'oomiyaEki */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Shin'oomiyaEki"; sourceTree = "<group>"; };
+		CEE581181824AA6900198653 /* Shin'Yakushiji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Shin'Yakushiji"; sourceTree = "<group>"; };
+		CEE581191824AA6900198653 /* Shin'YakushijiRyori */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Shin'YakushijiRyori"; sourceTree = "<group>"; };
+		CEE5811A1824AA6900198653 /* Shin'yakushijiShunie */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Shin'yakushijiShunie"; sourceTree = "<group>"; };
+		CEE5811B1824AA6900198653 /* Shingon'in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Shingon'in"; sourceTree = "<group>"; };
+		CEE5811C1824AA6900198653 /* ShinKoukaidou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShinKoukaidou; sourceTree = "<group>"; };
+		CEE5811D1824AA6900198653 /* ShinshindouShoten */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShinshindouShoten; sourceTree = "<group>"; };
+		CEE5811E1824AA6900198653 /* Shiomi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shiomi; sourceTree = "<group>"; };
+		CEE5811F1824AA6900198653 /* ShirafujiKoukou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShirafujiKoukou; sourceTree = "<group>"; };
+		CEE581201824AA6900198653 /* ShirahujiTaki */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShirahujiTaki; sourceTree = "<group>"; };
+		CEE581211824AA6900198653 /* ShokuryouJimusho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShokuryouJimusho; sourceTree = "<group>"; };
+		CEE581221824AA6900198653 /* ShokuryouJimushoShisho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShokuryouJimushoShisho; sourceTree = "<group>"; };
+		CEE581231824AA6900198653 /* Shopping */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shopping; sourceTree = "<group>"; };
+		CEE581241824AA6900198653 /* ShoppingArea */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShoppingArea; sourceTree = "<group>"; };
+		CEE581251824AA6900198653 /* ShoukaDaigaku */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShoukaDaigaku; sourceTree = "<group>"; };
+		CEE581261824AA6900198653 /* ShoukouKaigisho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShoukouKaigisho; sourceTree = "<group>"; };
+		CEE581271824AA6900198653 /* ShoumuTennouryou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShoumuTennouryou; sourceTree = "<group>"; };
+		CEE581281824AA6900198653 /* Shoumyouji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shoumyouji; sourceTree = "<group>"; };
+		CEE581291824AA6900198653 /* ShounenKanbetsusho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShounenKanbetsusho; sourceTree = "<group>"; };
+		CEE5812A1824AA6900198653 /* ShounenKeimusho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShounenKeimusho; sourceTree = "<group>"; };
+		CEE5812B1824AA6900198653 /* Shourou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shourou; sourceTree = "<group>"; };
+		CEE5812C1824AA6900198653 /* Shousouin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shousouin; sourceTree = "<group>"; };
+		CEE5812D1824AA6900198653 /* ShousouinHashutsusho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShousouinHashutsusho; sourceTree = "<group>"; };
+		CEE5812E1824AA6900198653 /* ShousouinJimusho */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ShousouinJimusho; sourceTree = "<group>"; };
+		CEE5812F1824AA6900198653 /* Shrine */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shrine; sourceTree = "<group>"; };
+		CEE581301824AA6900198653 /* Shunjuukan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Shunjuukan; sourceTree = "<group>"; };
+		CEE581311824AA6900198653 /* ShuubyouKanriSenta- */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ShuubyouKanriSenta-"; sourceTree = "<group>"; };
+		CEE581321824AA6900198653 /* Sightseeing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sightseeing; sourceTree = "<group>"; };
+		CEE581331824AA6900198653 /* SougouChousha */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SougouChousha; sourceTree = "<group>"; };
+		CEE581341824AA6900198653 /* Soujiin */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Soujiin; sourceTree = "<group>"; };
+		CEE581351824AA6900198653 /* SouvenirShop */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SouvenirShop; sourceTree = "<group>"; };
+		CEE581361824AA6900198653 /* Sport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sport; sourceTree = "<group>"; };
+		CEE581371824AA6900198653 /* SudouTennousha */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SudouTennousha; sourceTree = "<group>"; };
+		CEE581381824AA6900198653 /* SugiyamaKohun */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SugiyamaKohun; sourceTree = "<group>"; };
+		CEE581391824AA6900198653 /* SuidouHaisuichi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SuidouHaisuichi; sourceTree = "<group>"; };
+		CEE5813A1824AA6900198653 /* Suikoden */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Suikoden; sourceTree = "<group>"; };
+		CEE5813B1824AA6900198653 /* Suzusen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Suzusen; sourceTree = "<group>"; };
+		CEE5813C1824AA6900198653 /* Takabatakesaron */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Takabatakesaron; sourceTree = "<group>"; };
+		CEE5813D1824AA6900198653 /* Takiginou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Takiginou; sourceTree = "<group>"; };
+		CEE5813E1824AA6900198653 /* TamukeyamaHachimanguu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TamukeyamaHachimanguu; sourceTree = "<group>"; };
+		CEE5813F1824AA6900198653 /* TamukeyamaTachiema */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TamukeyamaTachiema; sourceTree = "<group>"; };
+		CEE581401824AA6900198653 /* Tanjouji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tanjouji; sourceTree = "<group>"; };
+		CEE581411824AA6900198653 /* Taxi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Taxi; sourceTree = "<group>"; };
+		CEE581421824AA6900198653 /* Tegaimon */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tegaimon; sourceTree = "<group>"; };
+		CEE581431824AA6900198653 /* TeikuHaisuichi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TeikuHaisuichi; sourceTree = "<group>"; };
+		CEE581441824AA6900198653 /* Temple */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Temple; sourceTree = "<group>"; };
+		CEE581451824AA6900198653 /* TenmadeAgareHigashimuki */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TenmadeAgareHigashimuki; sourceTree = "<group>"; };
+		CEE581461824AA6900198653 /* TenriKyoukai1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TenriKyoukai1; sourceTree = "<group>"; };
+		CEE581471824AA6900198653 /* TenriKyoukai2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TenriKyoukai2; sourceTree = "<group>"; };
+		CEE581481824AA6900198653 /* TenriKyoukai3 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TenriKyoukai3; sourceTree = "<group>"; };
+		CEE581491824AA6900198653 /* TenriKyoukai4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TenriKyoukai4; sourceTree = "<group>"; };
+		CEE5814A1824AA6900198653 /* TerayamaReien */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TerayamaReien; sourceTree = "<group>"; };
+		CEE5814B1824AA6900198653 /* Theater */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Theater; sourceTree = "<group>"; };
+		CEE5814C1824AA6900198653 /* Tobihino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tobihino; sourceTree = "<group>"; };
+		CEE5814D1824AA6900198653 /* Tokinoshiryoukan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tokinoshiryoukan; sourceTree = "<group>"; };
+		CEE5814E1824AA6900198653 /* Tokuyuuji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tokuyuuji; sourceTree = "<group>"; };
+		CEE5814F1824AA6900198653 /* Toudaiji */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Toudaiji; sourceTree = "<group>"; };
+		CEE581501824AA6900198653 /* ToudaijiKyuukeidai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToudaijiKyuukeidai; sourceTree = "<group>"; };
+		CEE581511824AA6900198653 /* ToudaijiSeishien */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToudaijiSeishien; sourceTree = "<group>"; };
+		CEE581521824AA6900198653 /* ToudaijiToshokan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToudaijiToshokan; sourceTree = "<group>"; };
+		CEE581531824AA6900198653 /* ToudaijiTounan'in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ToudaijiTounan'in"; sourceTree = "<group>"; };
+		CEE581541824AA6900198653 /* ToukaiShizenhodou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToukaiShizenhodou; sourceTree = "<group>"; };
+		CEE581551824AA6900198653 /* Toukindou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Toukindou; sourceTree = "<group>"; };
+		CEE581561824AA6900198653 /* ToukyouGeidaiFuzokuShisetsu */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToukyouGeidaiFuzokuShisetsu; sourceTree = "<group>"; };
+		CEE581571824AA6900198653 /* ToukyuuKankou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ToukyuuKankou; sourceTree = "<group>"; };
+		CEE581581824AA6900198653 /* Tounochaya */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tounochaya; sourceTree = "<group>"; };
+		CEE581591824AA6900198653 /* Train */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Train; sourceTree = "<group>"; };
+		CEE5815A1824AA6900198653 /* Transportation */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Transportation; sourceTree = "<group>"; };
+		CEE5815B1824AA6900198653 /* TravelAgency */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TravelAgency; sourceTree = "<group>"; };
+		CEE5815C1824AA6900198653 /* TravelInformation */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TravelInformation; sourceTree = "<group>"; };
+		CEE5815D1824AA6900198653 /* TsubaiShougakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TsubaiShougakkou; sourceTree = "<group>"; };
+		CEE5815E1824AA6900198653 /* Tsubohachi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Tsubohachi; sourceTree = "<group>"; };
+		CEE5815F1824AA6900198653 /* TsudumizakaKitaShougakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TsudumizakaKitaShougakkou; sourceTree = "<group>"; };
+		CEE581601824AA6900198653 /* TsudumizakaShougakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TsudumizakaShougakkou; sourceTree = "<group>"; };
+		CEE581611824AA6900198653 /* UguisudukaKofun */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UguisudukaKofun; sourceTree = "<group>"; };
+		CEE581621824AA6900198653 /* Ukimidou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Ukimidou; sourceTree = "<group>"; };
+		CEE581631824AA6900198653 /* Umanome */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Umanome; sourceTree = "<group>"; };
+		CEE581641824AA6900198653 /* Unemesai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Unemesai; sourceTree = "<group>"; };
+		CEE581651824AA6900198653 /* University */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = University; sourceTree = "<group>"; };
+		CEE581661824AA6900198653 /* UwanabeIke */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UwanabeIke; sourceTree = "<group>"; };
+		CEE581671824AA6900198653 /* WakabaRyouriGakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WakabaRyouriGakkou; sourceTree = "<group>"; };
+		CEE581681824AA6900198653 /* WakakusaChuugakkou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WakakusaChuugakkou; sourceTree = "<group>"; };
+		CEE581691824AA6900198653 /* WakakusaHoteru */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WakakusaHoteru; sourceTree = "<group>"; };
+		CEE5816A1824AA6900198653 /* WakakusaKouminkan */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WakakusaKouminkan; sourceTree = "<group>"; };
+		CEE5816B1824AA6900198653 /* WakakusaShoten */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WakakusaShoten; sourceTree = "<group>"; };
+		CEE5816C1824AA6900198653 /* Wakakusayama */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wakakusayama; sourceTree = "<group>"; };
+		CEE5816D1824AA6900198653 /* Wakakusayamayaki */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Wakakusayamayaki; sourceTree = "<group>"; };
+		CEE5816E1824AA6900198653 /* WakamiyaJinja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WakamiyaJinja; sourceTree = "<group>"; };
+		CEE5816F1824AA6900198653 /* WakamiyaOnmatsuri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WakamiyaOnmatsuri; sourceTree = "<group>"; };
+		CEE581701824AA6900198653 /* Yakyuujo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Yakyuujo; sourceTree = "<group>"; };
+		CEE581711824AA6900198653 /* YamatoSansou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YamatoSansou; sourceTree = "<group>"; };
+		CEE581721824AA6900198653 /* YanagiDyaya */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YanagiDyaya; sourceTree = "<group>"; };
+		CEE581731824AA6900198653 /* YasuraginoMichi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YasuraginoMichi; sourceTree = "<group>"; };
+		CEE581741824AA6900198653 /* YomiuriRyokou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YomiuriRyokou; sourceTree = "<group>"; };
+		CEE581751824AA6900198653 /* YoshikiGawa */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = YoshikiGawa; sourceTree = "<group>"; };
+		CEE581761824AA6900198653 /* Yugajinja */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Yugajinja; sourceTree = "<group>"; };
+		CEE581771824AA6900198653 /* Yumeya */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Yumeya; sourceTree = "<group>"; };
+		CEE581781824AA6900198653 /* Yurimatsuri */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Yurimatsuri; sourceTree = "<group>"; };
+		CEE581791824AA6900198653 /* Yuumeidou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Yuumeidou; sourceTree = "<group>"; };
+		CEE5817A1824AA6900198653 /* Zutou */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Zutou; sourceTree = "<group>"; };
+		CEE5817C1824AA6900198653 /* All */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = All; sourceTree = "<group>"; };
+		CEE5817D1824AA6900198653 /* Dining */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dining; sourceTree = "<group>"; };
+		CEE581801824AC3800198653 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		CEE581821824AC4100198653 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEE57EAA1824A7DB00198653 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE581831824AC4100198653 /* GLUT.framework in Frameworks */,
+				CEE581811824AC3800198653 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEE57EA41824A7DB00198653 = {
+			isa = PBXGroup;
+			children = (
+				CEE581821824AC4100198653 /* GLUT.framework */,
+				CEE581801824AC3800198653 /* OpenGL.framework */,
+				CEE57F011824AA6700198653 /* data */,
+				CEE57EFA1824AA5B00198653 /* fonts */,
+				CEE57EB91824A81900198653 /* src */,
+				CEE57EAE1824A7DB00198653 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEE57EAE1824A7DB00198653 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEE57EAD1824A7DB00198653 /* WING */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEE57EB91824A81900198653 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				CEE57EBA1824A81900198653 /* build.sh */,
+				CEE57EBB1824A81900198653 /* calc.c */,
+				CEE57EBC1824A81900198653 /* calc.h */,
+				CEE57EBD1824A81900198653 /* calcWeight.c */,
+				CEE57EBE1824A81900198653 /* calcWeight.h */,
+				CEE57EBF1824A81900198653 /* dataentry.h */,
+				CEE57EC01824A81900198653 /* digitalMap.c */,
+				CEE57EC11824A81900198653 /* digitalMap.h */,
+				CEE57EC21824A81900198653 /* draw.c */,
+				CEE57EC31824A81900198653 /* draw.h */,
+				CEE57EC41824A81900198653 /* geom.c */,
+				CEE57EC51824A81900198653 /* geom.h */,
+				CEE57EC61824A81900198653 /* index.c */,
+				CEE57EC71824A81900198653 /* index.h */,
+				CEE57EC91824A81900198653 /* jogl.c.bak */,
+				CEE57ECA1824A81900198653 /* jogl.h */,
+				CEE57ECB1824A81900198653 /* joglIntel.c */,
+				CEE57ECC1824A81900198653 /* jstring.c */,
+				CEE57ECD1824A81900198653 /* jstring.h */,
+				CEE57ECF1824A81900198653 /* main.c */,
+				CEE57ED01824A81900198653 /* main.h */,
+				CEE57ED11824A81900198653 /* Makefile */,
+				CEE57ED21824A81900198653 /* Makefile.junk */,
+				CEE57ED31824A81900198653 /* mapData.c */,
+				CEE57ED41824A81900198653 /* mapData.h */,
+				CEE57ED51824A81900198653 /* mapitem.c */,
+				CEE57ED61824A81900198653 /* mapitem.h */,
+				CEE57ED71824A81900198653 /* move.c */,
+				CEE57ED81824A81900198653 /* move.h */,
+				CEE57ED91824A81900198653 /* readdata.c */,
+				CEE57EDA1824A81900198653 /* rgb.c */,
+				CEE57EDB1824A81900198653 /* rgb.h */,
+				CEE57EDC1824A81900198653 /* showGuide.c */,
+				CEE57EDD1824A81900198653 /* showGuide.h */,
+				CEE57EDE1824A81900198653 /* sub.c */,
+				CEE57EDF1824A81900198653 /* sub.h */,
+				CEE57EE01824A81900198653 /* toc.c */,
+				CEE57EE11824A81900198653 /* toc.h */,
+				CEE57EE21824A81900198653 /* winpos.h */,
+				CEE57EE31824A81900198653 /* winpos.h.org */,
+				CEE57EE41824A81900198653 /* winpos.h.small */,
+				CEE57EE51824A81900198653 /* winpos.h.wide */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		CEE57EFA1824AA5B00198653 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CEE57EFB1824AA5B00198653 /* gosiku.ixl */,
+				CEE57EFC1824AA5B00198653 /* gosiku.otl */,
+				CEE57EFD1824AA5B00198653 /* jis16 */,
+				CEE57EFE1824AA5B00198653 /* jis24 */,
+				CEE57EFF1824AA5B00198653 /* strvec.ixl */,
+				CEE57F001824AA5B00198653 /* strvec.otl */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		CEE57F011824AA6700198653 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				CEE57F021824AA6700198653 /* map */,
+				CEE57F111824AA6700198653 /* pindex */,
+				CEE57F121824AA6700198653 /* rgb */,
+				CEE57F791824AA6700198653 /* text */,
+				CEE5817B1824AA6900198653 /* textDebug */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		CEE57F021824AA6700198653 /* map */ = {
+			isa = PBXGroup;
+			children = (
+				CEE57F031824AA6700198653 /* list */,
+				CEE57F041824AA6700198653 /* loclist */,
+				CEE57F051824AA6700198653 /* loclist1 */,
+				CEE57F061824AA6700198653 /* makedata */,
+				CEE57F071824AA6700198653 /* memtopgm */,
+				CEE57F081824AA6700198653 /* memtops */,
+				CEE57F091824AA6700198653 /* memtoss */,
+				CEE57F0A1824AA6700198653 /* nara.map */,
+				CEE57F0B1824AA6700198653 /* nara.mem */,
+				CEE57F0C1824AA6700198653 /* nara.pgm */,
+				CEE57F0D1824AA6700198653 /* naramap */,
+				CEE57F0E1824AA6700198653 /* readmap */,
+				CEE57F0F1824AA6700198653 /* readmap1 */,
+				CEE57F101824AA6700198653 /* README */,
+			);
+			path = map;
+			sourceTree = "<group>";
+		};
+		CEE57F121824AA6700198653 /* rgb */ = {
+			isa = PBXGroup;
+			children = (
+				CEE57F131824AA6700198653 /* 00MAPPING */,
+				CEE57F141824AA6700198653 /* Borden.rgb */,
+				CEE57F151824AA6700198653 /* FujitaUnkoudou.rgb */,
+				CEE57F161824AA6700198653 /* HoteruFujita.rgb */,
+				CEE57F171824AA6700198653 /* img0001.rgb */,
+				CEE57F181824AA6700198653 /* img0002.rgb */,
+				CEE57F191824AA6700198653 /* img0003.rgb */,
+				CEE57F1A1824AA6700198653 /* img0004.rgb */,
+				CEE57F1B1824AA6700198653 /* img0005.rgb */,
+				CEE57F1C1824AA6700198653 /* img0006.rgb */,
+				CEE57F1D1824AA6700198653 /* img0007.rgb */,
+				CEE57F1E1824AA6700198653 /* img0008.rgb */,
+				CEE57F1F1824AA6700198653 /* img0009.rgb */,
+				CEE57F201824AA6700198653 /* img0010.rgb */,
+				CEE57F211824AA6700198653 /* img0011.rgb */,
+				CEE57F221824AA6700198653 /* img0012.rgb */,
+				CEE57F231824AA6700198653 /* img0013.rgb */,
+				CEE57F241824AA6700198653 /* img0014.rgb */,
+				CEE57F251824AA6700198653 /* img0015.rgb */,
+				CEE57F261824AA6700198653 /* img0016.rgb */,
+				CEE57F271824AA6700198653 /* img0017.rgb */,
+				CEE57F281824AA6700198653 /* img0018.rgb */,
+				CEE57F291824AA6700198653 /* img0019.rgb */,
+				CEE57F2A1824AA6700198653 /* img0020.rgb */,
+				CEE57F2B1824AA6700198653 /* img0021.rgb */,
+				CEE57F2C1824AA6700198653 /* img0022.rgb */,
+				CEE57F2D1824AA6700198653 /* img0023.rgb */,
+				CEE57F2E1824AA6700198653 /* img0024.rgb */,
+				CEE57F2F1824AA6700198653 /* img0025.rgb */,
+				CEE57F301824AA6700198653 /* img0026.rgb */,
+				CEE57F311824AA6700198653 /* img0027.rgb */,
+				CEE57F321824AA6700198653 /* img0028.rgb */,
+				CEE57F331824AA6700198653 /* img0029.rgb */,
+				CEE57F341824AA6700198653 /* img0030.rgb */,
+				CEE57F351824AA6700198653 /* img0031.rgb */,
+				CEE57F361824AA6700198653 /* img0032.rgb */,
+				CEE57F371824AA6700198653 /* img0033.rgb */,
+				CEE57F381824AA6700198653 /* img0034.rgb */,
+				CEE57F391824AA6700198653 /* img0035.rgb */,
+				CEE57F3A1824AA6700198653 /* img0036.rgb */,
+				CEE57F3B1824AA6700198653 /* img0037.rgb */,
+				CEE57F3C1824AA6700198653 /* img0038.rgb */,
+				CEE57F3D1824AA6700198653 /* img0039.rgb */,
+				CEE57F3E1824AA6700198653 /* img0040.rgb */,
+				CEE57F3F1824AA6700198653 /* img0041.rgb */,
+				CEE57F401824AA6700198653 /* img0042.rgb */,
+				CEE57F411824AA6700198653 /* img0043.rgb */,
+				CEE57F421824AA6700198653 /* img0044.rgb */,
+				CEE57F431824AA6700198653 /* img0045.rgb */,
+				CEE57F441824AA6700198653 /* img0046.rgb */,
+				CEE57F451824AA6700198653 /* img0047.rgb */,
+				CEE57F461824AA6700198653 /* img0048.rgb */,
+				CEE57F471824AA6700198653 /* img0049.rgb */,
+				CEE57F481824AA6700198653 /* img0050.rgb */,
+				CEE57F491824AA6700198653 /* img0051.rgb */,
+				CEE57F4A1824AA6700198653 /* img0052.rgb */,
+				CEE57F4B1824AA6700198653 /* img0053.rgb */,
+				CEE57F4C1824AA6700198653 /* img0054.rgb */,
+				CEE57F4D1824AA6700198653 /* img0055.rgb */,
+				CEE57F4E1824AA6700198653 /* img0056.rgb */,
+				CEE57F4F1824AA6700198653 /* img0057.rgb */,
+				CEE57F501824AA6700198653 /* img0058.rgb */,
+				CEE57F511824AA6700198653 /* img0059.rgb */,
+				CEE57F521824AA6700198653 /* img0060.rgb */,
+				CEE57F531824AA6700198653 /* img0061.rgb */,
+				CEE57F541824AA6700198653 /* img0062.rgb */,
+				CEE57F551824AA6700198653 /* img0063.rgb */,
+				CEE57F561824AA6700198653 /* img0064.rgb */,
+				CEE57F571824AA6700198653 /* img0065.rgb */,
+				CEE57F581824AA6700198653 /* img0066.rgb */,
+				CEE57F591824AA6700198653 /* img0067.rgb */,
+				CEE57F5A1824AA6700198653 /* img0068.rgb */,
+				CEE57F5B1824AA6700198653 /* img0069.rgb */,
+				CEE57F5C1824AA6700198653 /* img0070.rgb */,
+				CEE57F5D1824AA6700198653 /* img0071.rgb */,
+				CEE57F5E1824AA6700198653 /* img0072.rgb */,
+				CEE57F5F1824AA6700198653 /* img0073.rgb */,
+				CEE57F601824AA6700198653 /* img0074.rgb */,
+				CEE57F611824AA6700198653 /* img0075.rgb */,
+				CEE57F621824AA6700198653 /* img0076.rgb */,
+				CEE57F631824AA6700198653 /* img0077.rgb */,
+				CEE57F641824AA6700198653 /* img0078.rgb */,
+				CEE57F651824AA6700198653 /* img0079.rgb */,
+				CEE57F661824AA6700198653 /* img0080.rgb */,
+				CEE57F671824AA6700198653 /* img0081.rgb */,
+				CEE57F681824AA6700198653 /* img0082.rgb */,
+				CEE57F691824AA6700198653 /* img0083.rgb */,
+				CEE57F6A1824AA6700198653 /* img0084.rgb */,
+				CEE57F6B1824AA6700198653 /* img0085.rgb */,
+				CEE57F6C1824AA6700198653 /* img0086.rgb */,
+				CEE57F6D1824AA6700198653 /* img0087.rgb */,
+				CEE57F6E1824AA6700198653 /* img0088.rgb */,
+				CEE57F6F1824AA6700198653 /* img0089.rgb */,
+				CEE57F701824AA6700198653 /* img0090.rgb */,
+				CEE57F711824AA6700198653 /* img0091.rgb */,
+				CEE57F721824AA6700198653 /* Kashiwagi.rgb */,
+				CEE57F731824AA6700198653 /* Mantourou.rgb */,
+				CEE57F741824AA6700198653 /* Masui.rgb */,
+				CEE57F751824AA6700198653 /* Minakuchi.rgb */,
+				CEE57F761824AA6700198653 /* Shiomi.rgb */,
+				CEE57F771824AA6700198653 /* WING.rgb */,
+				CEE57F781824AA6700198653 /* WS_FTP.LOG */,
+			);
+			path = rgb;
+			sourceTree = "<group>";
+		};
+		CEE57F791824AA6700198653 /* text */ = {
+			isa = PBXGroup;
+			children = (
+				CEE57F7A1824AA6700198653 /* A-tosalonmiyazaki */,
+				CEE57F7B1824AA6700198653 /* Ajiteiyamazakiya */,
+				CEE57F7C1824AA6700198653 /* All */,
+				CEE57F7D1824AA6700198653 /* AmusementPark */,
+				CEE57F7E1824AA6700198653 /* Aoi */,
+				CEE57F7F1824AA6700198653 /* AoyamaGaishuuRyokuchi */,
+				CEE57F801824AA6700198653 /* AoyamaIcchomeRyokuchi */,
+				CEE57F811824AA6700198653 /* AoyamaKinrinKouen */,
+				CEE57F821824AA6700198653 /* AoyamaSeisuien */,
+				CEE57F831824AA6700198653 /* AoyamaShizenRyokuchi */,
+				CEE57F841824AA6700198653 /* AraIke */,
+				CEE57F851824AA6700198653 /* ArtMuseum */,
+				CEE57F861824AA6700198653 /* Ashibiyahonpo */,
+				CEE57F871824AA6700198653 /* Ashura */,
+				CEE57F881824AA6700198653 /* AsukaChuugakkou */,
+				CEE57F891824AA6700198653 /* AsukaShougakkou */,
+				CEE57F8A1824AA6700198653 /* Bank */,
+				CEE57F8B1824AA6700198653 /* Bar */,
+				CEE57F8C1824AA6700198653 /* Bibure */,
+				CEE57F8D1824AA6700198653 /* BigguNara */,
+				CEE57F8E1824AA6700198653 /* BodaiGawa */,
+				CEE57F8F1824AA6700198653 /* Bodaiin */,
+				CEE57F901824AA6700198653 /* BookStore */,
+				CEE57F911824AA6700198653 /* BorantexiaSenta- */,
+				CEE57F921824AA6700198653 /* Borden */,
+				CEE57F931824AA6700198653 /* BoshiHukushiSenta- */,
+				CEE57F941824AA6700198653 /* Boshiryou */,
+				CEE57F951824AA6700198653 /* Bridge */,
+				CEE57F961824AA6700198653 /* Broadcasting */,
+				CEE57F971824AA6700198653 /* BukkyouShiryouSenta- */,
+				CEE57F981824AA6700198653 /* Bunchosha */,
+				CEE57F991824AA6700198653 /* BunkaKaikan */,
+				CEE57F9A1824AA6700198653 /* Bus */,
+				CEE57F9B1824AA6700198653 /* Byakugouji */,
+				CEE57F9C1824AA6700198653 /* Cafe */,
+				CEE57F9D1824AA6700198653 /* Camping */,
+				CEE57F9E1824AA6700198653 /* ChihouSaibansho */,
+				CEE57F9F1824AA6700198653 /* ChijiKousha */,
+				CEE57FA01824AA6700198653 /* Chikara */,
+				CEE57FA11824AA6700198653 /* Chisokuin */,
+				CEE57FA21824AA6700198653 /* ChisokuinNaraYaezakura */,
+				CEE57FA31824AA6700198653 /* Chiyonoyatakemura */,
+				CEE57FA41824AA6700198653 /* Church */,
+				CEE57FA51824AA6700198653 /* Chuukindou */,
+				CEE57FA61824AA6700198653 /* Chuumon */,
+				CEE57FA71824AA6700198653 /* ChuuouBudoujo */,
+				CEE57FA81824AA6700198653 /* ChuuouDainiBudoujo */,
+				CEE57FA91824AA6700198653 /* ChuuouDainiTaiikukan */,
+				CEE57FAA1824AA6700198653 /* ChuuouJidouSoudanjo */,
+				CEE57FAB1824AA6700198653 /* ChuuouKouminkanKankouSenta- */,
+				CEE57FAC1824AA6700198653 /* ChuuouTaiikukan */,
+				CEE57FAD1824AA6700198653 /* ChuuouYuubinkyoku */,
+				CEE57FAE1824AA6700198653 /* Chuuseiin */,
+				CEE57FAF1824AA6700198653 /* ChuushouKigyouKaikan */,
+				CEE57FB01824AA6700198653 /* Company */,
+				CEE57FB11824AA6700198653 /* Culture */,
+				CEE57FB21824AA6700198653 /* DaianjiKyuukeidai */,
+				CEE57FB31824AA6700198653 /* Daibutsuden */,
+				CEE57FB41824AA6700198653 /* DaibutsuIke */,
+				CEE57FB51824AA6700198653 /* Daiei */,
+				CEE57FB61824AA6700198653 /* DaijouinTeien */,
+				CEE57FB71824AA6700198653 /* DaimonjiOkuribi */,
+				CEE57FB81824AA6700198653 /* DainiGoudouChousha */,
+				CEE57FB91824AA6700198653 /* DaisanGoudouChousha */,
+				CEE57FBA1824AA6700198653 /* Denkouji */,
+				CEE57FBB1824AA6700198653 /* DepartmentStore */,
+				CEE57FBC1824AA6700198653 /* Dining */,
+				CEE57FBD1824AA6700198653 /* Dori-muRando */,
+				CEE57FBE1824AA6700198653 /* Edosan */,
+				CEE57FBF1824AA6700198653 /* EiseiKenkyuusho */,
+				CEE57FC01824AA6700198653 /* ElementarySchool */,
+				CEE57FC11824AA6700198653 /* EnuecchikeiNara */,
+				CEE57FC21824AA6700198653 /* Event */,
+				CEE57FC31824AA6700198653 /* Factory */,
+				CEE57FC41824AA6700198653 /* FireStation */,
+				CEE57FC51824AA6700198653 /* FujinKaikan */,
+				CEE57FC61824AA6700198653 /* FujinSoudansho */,
+				CEE57FC71824AA6700198653 /* FujitaUnkoudou */,
+				CEE57FC81824AA6700198653 /* Gallery */,
+				CEE57FC91824AA6700198653 /* GankoujiShoutouin */,
+				CEE57FCA1824AA6700198653 /* GankoujiTouato */,
+				CEE57FCB1824AA6700198653 /* Gen */,
+				CEE57FCC1824AA6700198653 /* GenmeiTennouryou */,
+				CEE57FCD1824AA6700198653 /* GenseiTennouryou */,
+				CEE57FCE1824AA6700198653 /* GijutsuKanrikaShikenjo */,
+				CEE57FCF1824AA6700198653 /* GohyakuTateyama */,
+				CEE57FD01824AA6700198653 /* Gojuunotou */,
+				CEE57FD11824AA6700198653 /* Gokouin */,
+				CEE57FD21824AA6700198653 /* GokurakubouKeidai */,
+				CEE57FD31824AA6700198653 /* GorufuSenta-1 */,
+				CEE57FD41824AA6700198653 /* GorufuSenta-2 */,
+				CEE57FD51824AA6700198653 /* GorufuSenta-3 */,
+				CEE57FD61824AA6700198653 /* GoudouChousha */,
+				CEE57FD71824AA6700198653 /* Graveyard */,
+				CEE57FD81824AA6700198653 /* Guraundo1 */,
+				CEE57FD91824AA6700198653 /* Guraundo2 */,
+				CEE57FDA1824AA6700198653 /* GyouzanoOushou */,
+				CEE57FDB1824AA6800198653 /* Hall */,
+				CEE57FDC1824AA6800198653 /* Hanaurushi */,
+				CEE57FDD1824AA6800198653 /* Hannyaji */,
+				CEE57FDE1824AA6800198653 /* Harishin */,
+				CEE57FDF1824AA6800198653 /* HarunaByouin */,
+				CEE57FE01824AA6800198653 /* HigashiHouko */,
+				CEE57FE11824AA6800198653 /* Higashimuki */,
+				CEE57FE21824AA6800198653 /* HigashinosakaJidoukan */,
+				CEE57FE31824AA6800198653 /* HigashinosakaRinpokan */,
+				CEE57FE41824AA6800198653 /* HigashiShoubousho */,
+				CEE57FE51824AA6800198653 /* HigashiTerabayashiRenrakusho */,
+				CEE57FE61824AA6800198653 /* Higashitouato */,
+				CEE57FE71824AA6800198653 /* HighSchool */,
+				CEE57FE81824AA6800198653 /* HimuroJinja */,
+				CEE57FE91824AA6800198653 /* Hirasounaraten */,
+				CEE57FEA1824AA6800198653 /* HistoricPlace */,
+				CEE57FEB1824AA6800198653 /* HojoKyougijo */,
+				CEE57FEC1824AA6800198653 /* Hokensho */,
+				CEE57FED1824AA6800198653 /* Hokkedou */,
+				CEE57FEE1824AA6800198653 /* Hokuendou */,
+				CEE57FEF1824AA6800198653 /* Hokurin'in */,
+				CEE57FF01824AA6800198653 /* Honbou1 */,
+				CEE57FF11824AA6800198653 /* Honbou2 */,
+				CEE57FF21824AA6800198653 /* Honden */,
+				CEE57FF31824AA6800198653 /* Honmyouji */,
+				CEE57FF41824AA6800198653 /* Hospital */,
+				CEE57FF51824AA6800198653 /* Hotel */,
+				CEE57FF61824AA6800198653 /* HoteruFujita */,
+				CEE57FF71824AA6800198653 /* Hougen'in */,
+				CEE57FF81824AA6800198653 /* Houjuin */,
+				CEE57FF91824AA6800198653 /* Houmotsuden */,
+				CEE57FFA1824AA6800198653 /* HoumuGoudouChousha */,
+				CEE57FFB1824AA6800198653 /* Hukuchiin */,
+				CEE57FFC1824AA6800198653 /* Hukuuin */,
+				CEE57FFD1824AA6800198653 /* Hutaiji */,
+				CEE57FFE1824AA6800198653 /* HuzokuShougakkou */,
+				CEE57FFF1824AA6800198653 /* Hyoushintei */,
+				CEE580001824AA6800198653 /* Ichijouin */,
+				CEE580011824AA6800198653 /* IchijouKoukou */,
+				CEE580021824AA6800198653 /* IchinoTorii */,
+				CEE580031824AA6800198653 /* IkedaGankoudou */,
+				CEE580041824AA6800198653 /* Ikkyuu */,
+				CEE580051824AA6800198653 /* ImanishikeShoin */,
+				CEE580061824AA6800198653 /* ImanishikeShoinChamise */,
+				CEE580071824AA6800198653 /* InadaByouin */,
+				CEE580081824AA6800198653 /* IsagawaJinja */,
+				CEE580091824AA6800198653 /* IsagawaYouchien */,
+				CEE5800A1824AA6800198653 /* Isokawa */,
+				CEE5800B1824AA6800198653 /* Isshindou */,
+				CEE5800C1824AA6800198653 /* Isuien */,
+				CEE5800D1824AA6800198653 /* IsuienSanshuu */,
+				CEE5800E1824AA6800198653 /* ItakuraGansoutei */,
+				CEE5800F1824AA6800198653 /* Izakaya */,
+				CEE580101824AA6800198653 /* Janbori- */,
+				CEE580111824AA6800198653 /* Jeia-ruNaraeki */,
+				CEE580121824AA6800198653 /* Jentori- */,
+				CEE580131824AA6800198653 /* Jihouin */,
+				CEE580141824AA6800198653 /* Jizouin */,
+				CEE580151824AA6800198653 /* JoseiSenta- */,
+				CEE580161824AA6800198653 /* JoshidaiFuzokuKoukou */,
+				CEE580171824AA6800198653 /* Joufukuji */,
+				CEE580181824AA6800198653 /* JR */,
+				CEE580191824AA6800198653 /* Jukkokudai */,
+				CEE5801A1824AA6800198653 /* JuniorHighSchool */,
+				CEE5801B1824AA6800198653 /* Juurin'in */,
+				CEE5801C1824AA6800198653 /* KagamiIke */,
+				CEE5801D1824AA6800198653 /* KagamiJinja */,
+				CEE5801E1824AA6800198653 /* Kagamitei */,
+				CEE5801F1824AA6800198653 /* Kaidan'in */,
+				CEE580201824AA6800198653 /* Kaidandou */,
+				CEE580211824AA6800198653 /* KaikaTennouryou */,
+				CEE580221824AA6800198653 /* Kaizandou */,
+				CEE580231824AA6800198653 /* Kaminobou */,
+				CEE580241824AA6800198653 /* Kan */,
+				CEE580251824AA6800198653 /* Kangakuin */,
+				CEE580261824AA6800198653 /* KangoGakkou */,
+				CEE580271824AA6800198653 /* KangouJinja */,
+				CEE580281824AA6800198653 /* Kanjinsho */,
+				CEE580291824AA6800198653 /* KankuuBasu */,
+				CEE5802A1824AA6800198653 /* Kannon'in */,
+				CEE5802B1824AA6800198653 /* KansaiHonsen1 */,
+				CEE5802C1824AA6800198653 /* KansaiHonsen2 */,
+				CEE5802D1824AA6800198653 /* Karikindou */,
+				CEE5802E1824AA6800198653 /* Kashiwagi */,
+				CEE5802F1824AA6800198653 /* Kasugaan */,
+				CEE580301824AA6800198653 /* KasugaChuugakkou */,
+				CEE580311824AA6800198653 /* KasugaHoteru */,
+				CEE580321824AA6800198653 /* KasugaJinjaNagi */,
+				CEE580331824AA6800198653 /* KasugaKouminkan */,
+				CEE580341824AA6800198653 /* KasugaNinaiDyaya */,
+				CEE580351824AA6800198653 /* KasugaOkuyamaShuuyuudouro */,
+				CEE580361824AA6800198653 /* KasugaTaisha */,
+				CEE580371824AA6800198653 /* KasugaTaishaKeidai */,
+				CEE580381824AA6800198653 /* Kasugataisharyouri */,
+				CEE580391824AA6800198653 /* Kasugayama */,
+				CEE5803A1824AA6800198653 /* KasugayamaGenshirin */,
+				CEE5803B1824AA6800198653 /* KasugayamaYuuhodou */,
+				CEE5803C1824AA6800198653 /* Kayakushidou */,
+				CEE5803D1824AA6800198653 /* KayouHimegamiDyaya */,
+				CEE5803E1824AA6800198653 /* Kenchou */,
+				CEE5803F1824AA6800198653 /* KenkeiHonbu */,
+				CEE580401824AA6800198653 /* KenkeiTetsudouKeisatsu */,
+				CEE580411824AA6800198653 /* KenKyouikuKaikan */,
+				CEE580421824AA6800198653 /* KenKyouikuSenta- */,
+				CEE580431824AA6800198653 /* KenKyouikuSenta-1 */,
+				CEE580441824AA6800198653 /* KenritsuBijutukan */,
+				CEE580451824AA6800198653 /* KenritsuToshokan */,
+				CEE580461824AA6800198653 /* Kikuokakougei */,
+				CEE580471824AA6800198653 /* Kikusuirou */,
+				CEE580481824AA6800198653 /* Kina */,
+				CEE580491824AA6800198653 /* Kinasa */,
+				CEE5804A1824AA6800198653 /* KinderGarten */,
+				CEE5804B1824AA6800198653 /* KinrouSeishounenHome */,
+				CEE5804C1824AA6800198653 /* Kinshaji */,
+				CEE5804D1824AA6800198653 /* Kintetsu */,
+				CEE5804E1824AA6800198653 /* KintetsuJikokuhyou */,
+				CEE5804F1824AA6800198653 /* KintetsuNaraEki */,
+				CEE580501824AA6800198653 /* KintetsuNarasen */,
+				CEE580511824AA6800198653 /* Kishoudai */,
+				CEE580521824AA6800198653 /* KitayamaJuuhakkenko */,
+				CEE580531824AA6800198653 /* Kobaien */,
+				CEE580541824AA6800198653 /* Kogetu */,
+				CEE580551824AA6800198653 /* KokudouKojiJimusho */,
+				CEE580561824AA6800198653 /* Kokuhoukan */,
+				CEE580571824AA6800198653 /* KokuritsuHakubutsukan */,
+				CEE580581824AA6800198653 /* Komugiko */,
+				CEE580591824AA6800198653 /* Konbuin */,
+				CEE5805A1824AA6800198653 /* KouanChousaJimusho */,
+				CEE5805B1824AA6800198653 /* Kouhukuji */,
+				CEE5805C1824AA6800198653 /* KouhukujiKyuukeidai */,
+				CEE5805D1824AA6800198653 /* KoukuHaisuichi */,
+				CEE5805E1824AA6800198653 /* Kounoike */,
+				CEE5805F1824AA6800198653 /* KounoikeKyuujo */,
+				CEE580601824AA6800198653 /* KounoikeUndoukouen */,
+				CEE580611824AA6800198653 /* Kourinji */,
+				CEE580621824AA6800198653 /* Kouunji */,
+				CEE580631824AA6800198653 /* Kura */,
+				CEE580641824AA6800198653 /* KurokamiyamaSupo-tsuSenta- */,
+				CEE580651824AA6800198653 /* Kusukusu */,
+				CEE580661824AA6800198653 /* Kuukaiji */,
+				CEE580671824AA6800198653 /* Kyoubate */,
+				CEE580681824AA6800198653 /* KyouikuDaigaku */,
+				CEE580691824AA6800198653 /* Kyuudoujou */,
+				CEE5806A1824AA6800198653 /* Library */,
+				CEE5806B1824AA6800198653 /* MaguroGoya */,
+				CEE5806C1824AA6800198653 /* Man'youen */,
+				CEE5806D1824AA6800198653 /* Man'youShokubutsuen */,
+				CEE5806E1824AA6800198653 /* Manda-repinokio */,
+				CEE5806F1824AA6800198653 /* Manmandou */,
+				CEE580701824AA6800198653 /* Mantourou */,
+				CEE580711824AA6800198653 /* Masagoya */,
+				CEE580721824AA6800198653 /* Masui */,
+				CEE580731824AA6800198653 /* MatsukuraByouin */,
+				CEE580741824AA6800198653 /* MIdorigaokaHaisuishorijo */,
+				CEE580751824AA6800198653 /* MidorigaokaJousuijou */,
+				CEE580761824AA6800198653 /* Midorinoie */,
+				CEE580771824AA6800198653 /* MidorinoOka */,
+				CEE580781824AA6800198653 /* MikasaKouminkan */,
+				CEE580791824AA6800198653 /* MikasaOnsenkyou */,
+				CEE5807A1824AA6800198653 /* MikasaReien */,
+				CEE5807B1824AA6800198653 /* Mikasayama */,
+				CEE5807C1824AA6800198653 /* Minakuchi */,
+				CEE5807D1824AA6800198653 /* MisoKaikan */,
+				CEE5807E1824AA6800198653 /* MitakeKyoukai */,
+				CEE5807F1824AA6800198653 /* MitamaJinja */,
+				CEE580801824AA6800198653 /* MiyakoHoteru */,
+				CEE580811824AA6800198653 /* Mochiidono */,
+				CEE580821824AA6800198653 /* Momoya */,
+				CEE580831824AA6800198653 /* Morinaraduketen */,
+				CEE580841824AA6800198653 /* MoujinHukushiSenta- */,
+				CEE580851824AA6800198653 /* Mountain */,
+				CEE580861824AA6800198653 /* MovieTheater */,
+				CEE580871824AA6800198653 /* MurasakiSanjoudoori */,
+				CEE580881824AA6800198653 /* Museum */,
+				CEE580891824AA6800198653 /* Myoukenguu */,
+				CEE5808A1824AA6800198653 /* N */,
+				CEE5808B1824AA6800198653 /* Nagasakiya */,
+				CEE5808C1824AA6800198653 /* NakanogawaKyuugijou */,
+				CEE5808D1824AA6800198653 /* Nan'endou */,
+				CEE5808E1824AA6800198653 /* Nandaimon */,
+				CEE5808F1824AA6800198653 /* Nandaimon'ato */,
+				CEE580901824AA6800198653 /* NantoGinkou */,
+				CEE580911824AA6800198653 /* NaraByouin */,
+				CEE580921824AA6800198653 /* NaraHoteru */,
+				CEE580931824AA6800198653 /* NaraIkueiKoukou */,
+				CEE580941824AA6800198653 /* NaraIkueiShougakkou */,
+				CEE580951824AA6800198653 /* NaraJoshiDaigaku */,
+				CEE580961824AA6800198653 /* NaraJoshidaiKokusaiKouryuuKaikan */,
+				CEE580971824AA6800198653 /* Narakankoukan */,
+				CEE580981824AA6800198653 /* NaraKateiSaibansho */,
+				CEE580991824AA6800198653 /* NaraKouen */,
+				CEE5809A1824AA6800198653 /* NaraKouenkan */,
+				CEE5809B1824AA6800198653 /* NaraKoukou */,
+				CEE5809C1824AA6800198653 /* NaraKousen */,
+				CEE5809D1824AA6800198653 /* NaraKoutsuu */,
+				CEE5809E1824AA6800198653 /* NarakoutsuuKankousha */,
+				CEE5809F1824AA6800198653 /* NaraKyouikudaiFuzokuChuugakkou */,
+				CEE580A01824AA6800198653 /* NaramachiSenta- */,
+				CEE580A11824AA6800198653 /* NaramachiShiryoukan */,
+				CEE580A21824AA6800198653 /* NaraOkuyamaDoraibuuxei */,
+				CEE580A31824AA6800198653 /* NaraTerebi */,
+				CEE580A41824AA6800198653 /* NarayamaEki */,
+				CEE580A51824AA6800198653 /* NarayamaOodoori */,
+				CEE580A61824AA6800198653 /* NaraYu-suHosuteru */,
+				CEE580A71824AA6800198653 /* NarazakaHaisuichi */,
+				CEE580A81824AA6800198653 /* NarazuhikoJinja */,
+				CEE580A91824AA6800198653 /* NatomiyamaHaka */,
+				CEE580AA1824AA6800198653 /* Nayakoubou */,
+				CEE580AB1824AA6800198653 /* NeirakuBijutukan */,
+				CEE580AC1824AA6800198653 /* Nenbutsudou */,
+				CEE580AD1824AA6800198653 /* Nichimo */,
+				CEE580AE1824AA6800198653 /* Nigatsudou */,
+				CEE580AF1824AA6800198653 /* NigatsudounoEma */,
+				CEE580B01824AA6800198653 /* NightSpot */,
+				CEE580B11824AA6800198653 /* NinoTorii */,
+				CEE580B21824AA6800198653 /* NishiHouko */,
+				CEE580B31824AA6800198653 /* NishinokyouJitenshadou */,
+				CEE580B41824AA6800198653 /* NishinosakaRinpokan */,
+				CEE580B51824AA6800198653 /* NishiuraByouin */,
+				CEE580B61824AA6800198653 /* Notogawa */,
+				CEE580B71824AA6800198653 /* NoukyouKaikan */,
+				CEE580B81824AA6800198653 /* O-rudexi-zu */,
+				CEE580B91824AA6800198653 /* OkayaByouin */,
+				CEE580BA1824AA6800198653 /* OkayaByouin'Yakushi */,
+				CEE580BB1824AA6800198653 /* Okuta */,
+				CEE580BC1824AA6800198653 /* OldGrave */,
+				CEE580BD1824AA6800198653 /* OldTown */,
+				CEE580BE1824AA6800198653 /* Omizutori */,
+				CEE580BF1824AA6800198653 /* OomiyaDoori */,
+				CEE580C01824AA6800198653 /* OomiyaShougakkou */,
+				CEE580C11824AA6800198653 /* OomoriIke */,
+				CEE580C21824AA6800198653 /* OoyamamorinoHaka */,
+				CEE580C31824AA6800198653 /* Ooyuya1 */,
+				CEE580C41824AA6800198653 /* Ooyuya2 */,
+				CEE580C51824AA6800198653 /* OrientoKan */,
+				CEE580C61824AA6800198653 /* Park */,
+				CEE580C71824AA6800198653 /* Pepita */,
+				CEE580C81824AA6800198653 /* Police */,
+				CEE580C91824AA6800198653 /* Pond */,
+				CEE580CA1824AA6800198653 /* PostOffice */,
+				CEE580CB1824AA6800198653 /* Press */,
+				CEE580CC1824AA6800198653 /* Pu-ru */,
+				CEE580CD1824AA6800198653 /* Public */,
+				CEE580CE1824AA6800198653 /* PublicHall */,
+				CEE580CF1824AA6800198653 /* PublicOffice */,
+				CEE580D01824AA6800198653 /* Publisher */,
+				CEE580D11824AA6800198653 /* Raigouji */,
+				CEE580D21824AA6800198653 /* Reigen'in */,
+				CEE580D31824AA6800198653 /* Renchouji */,
+				CEE580D41824AA6800198653 /* Renjouji */,
+				CEE580D51824AA6800198653 /* Restaurant */,
+				CEE580D61824AA6800198653 /* RikujouKyougijou */,
+				CEE580D71824AA6800198653 /* River */,
+				CEE580D81824AA6800198653 /* Road */,
+				CEE580D91824AA6800198653 /* Rokuen */,
+				CEE580DA1824AA6800198653 /* RoudouKaikan */,
+				CEE580DB1824AA6800198653 /* Roumon */,
+				CEE580DC1824AA6800198653 /* Roushunnoie */,
+				CEE580DD1824AA6900198653 /* RumisuShijimi1 */,
+				CEE580DE1824AA6900198653 /* RumisuShijimi2 */,
+				CEE580DF1824AA6900198653 /* Ryouzanpaku */,
+				CEE580E01824AA6900198653 /* RyouzanpakuBekkan */,
+				CEE580E11824AA6900198653 /* Ryuubidou */,
+				CEE580E21824AA6900198653 /* RyuuryouChouseichi */,
+				CEE580E31824AA6900198653 /* Ryuushouin */,
+				CEE580E41824AA6900198653 /* Ryuuzouin */,
+				CEE580E51824AA6900198653 /* SaboBashi */,
+				CEE580E61824AA6900198653 /* SabodaiRyokuchi1 */,
+				CEE580E71824AA6900198653 /* SabodaiRyokuchi2 */,
+				CEE580E81824AA6900198653 /* SabodaiRyokuchi4 */,
+				CEE580E91824AA6900198653 /* SabodaiSHougakkou */,
+				CEE580EA1824AA6900198653 /* Sabogawa */,
+				CEE580EB1824AA6900198653 /* SabogawaShougakkou */,
+				CEE580EC1824AA6900198653 /* SaboJusanjo */,
+				CEE580ED1824AA6900198653 /* SaboShougakkou */,
+				CEE580EE1824AA6900198653 /* SaboyamaKinrinKouen */,
+				CEE580EF1824AA6900198653 /* SaboyamaMinamiryou */,
+				CEE580F01824AA6900198653 /* SagiIke */,
+				CEE580F11824AA6900198653 /* Saihouji */,
+				CEE580F21824AA6900198653 /* Saikindouato */,
+				CEE580F31824AA6900198653 /* SaimiShougakkou */,
+				CEE580F41824AA6900198653 /* Saitouato */,
+				CEE580F51824AA6900198653 /* SakuraiByouin */,
+				CEE580F61824AA6900198653 /* Sakuraisen */,
+				CEE580F71824AA6900198653 /* SamariyaKyokai */,
+				CEE580F81824AA6900198653 /* SamaSama */,
+				CEE580F91824AA6900198653 /* SanjouDoori */,
+				CEE580FA1824AA6900198653 /* Sanjuunotou */,
+				CEE580FB1824AA6900198653 /* Sarusawaike */,
+				CEE580FC1824AA6900198653 /* SasaokaJinja */,
+				CEE580FD1824AA6900198653 /* Sashizudou */,
+				CEE580FE1824AA6900198653 /* SawaiByouin */,
+				CEE580FF1824AA6900198653 /* ScenicPlace */,
+				CEE581001824AA6900198653 /* School */,
+				CEE581011824AA6900198653 /* Seibidou */,
+				CEE581021824AA6900198653 /* Seikan'in */,
+				CEE581031824AA6900198653 /* SeikatsuKagakuSenta- */,
+				CEE581041824AA6900198653 /* Seikyou */,
+				CEE581051824AA6900198653 /* Seinennoie */,
+				CEE581061824AA6900198653 /* Seiryouin */,
+				CEE581071824AA6900198653 /* SeishounenJidoukaikan */,
+				CEE581081824AA6900198653 /* SeishounenKaikan */,
+				CEE581091824AA6900198653 /* SekisuiKagaku */,
+				CEE5810A1824AA6900198653 /* Senjuan'Yoshimune */,
+				CEE5810B1824AA6900198653 /* Senjudou */,
+				CEE5810C1824AA6900198653 /* Sexe-ruDarujan */,
+				CEE5810D1824AA6900198653 /* ShakaiHokenJimusho */,
+				CEE5810E1824AA6900198653 /* ShakaiHukushiKaikan */,
+				CEE5810F1824AA6900198653 /* Sharp */,
+				CEE581101824AA6900198653 /* ShashinBijutsukan */,
+				CEE581111824AA6900198653 /* Shiduka */,
+				CEE581121824AA6900198653 /* ShiganaoyaKyuukyo */,
+				CEE581131824AA6900198653 /* Shigatsudou */,
+				CEE581141824AA6900198653 /* ShikaGawa */,
+				CEE581151824AA6900198653 /* Shikitei */,
+				CEE581161824AA6900198653 /* Shin'Ishibashi */,
+				CEE581171824AA6900198653 /* Shin'oomiyaEki */,
+				CEE581181824AA6900198653 /* Shin'Yakushiji */,
+				CEE581191824AA6900198653 /* Shin'YakushijiRyori */,
+				CEE5811A1824AA6900198653 /* Shin'yakushijiShunie */,
+				CEE5811B1824AA6900198653 /* Shingon'in */,
+				CEE5811C1824AA6900198653 /* ShinKoukaidou */,
+				CEE5811D1824AA6900198653 /* ShinshindouShoten */,
+				CEE5811E1824AA6900198653 /* Shiomi */,
+				CEE5811F1824AA6900198653 /* ShirafujiKoukou */,
+				CEE581201824AA6900198653 /* ShirahujiTaki */,
+				CEE581211824AA6900198653 /* ShokuryouJimusho */,
+				CEE581221824AA6900198653 /* ShokuryouJimushoShisho */,
+				CEE581231824AA6900198653 /* Shopping */,
+				CEE581241824AA6900198653 /* ShoppingArea */,
+				CEE581251824AA6900198653 /* ShoukaDaigaku */,
+				CEE581261824AA6900198653 /* ShoukouKaigisho */,
+				CEE581271824AA6900198653 /* ShoumuTennouryou */,
+				CEE581281824AA6900198653 /* Shoumyouji */,
+				CEE581291824AA6900198653 /* ShounenKanbetsusho */,
+				CEE5812A1824AA6900198653 /* ShounenKeimusho */,
+				CEE5812B1824AA6900198653 /* Shourou */,
+				CEE5812C1824AA6900198653 /* Shousouin */,
+				CEE5812D1824AA6900198653 /* ShousouinHashutsusho */,
+				CEE5812E1824AA6900198653 /* ShousouinJimusho */,
+				CEE5812F1824AA6900198653 /* Shrine */,
+				CEE581301824AA6900198653 /* Shunjuukan */,
+				CEE581311824AA6900198653 /* ShuubyouKanriSenta- */,
+				CEE581321824AA6900198653 /* Sightseeing */,
+				CEE581331824AA6900198653 /* SougouChousha */,
+				CEE581341824AA6900198653 /* Soujiin */,
+				CEE581351824AA6900198653 /* SouvenirShop */,
+				CEE581361824AA6900198653 /* Sport */,
+				CEE581371824AA6900198653 /* SudouTennousha */,
+				CEE581381824AA6900198653 /* SugiyamaKohun */,
+				CEE581391824AA6900198653 /* SuidouHaisuichi */,
+				CEE5813A1824AA6900198653 /* Suikoden */,
+				CEE5813B1824AA6900198653 /* Suzusen */,
+				CEE5813C1824AA6900198653 /* Takabatakesaron */,
+				CEE5813D1824AA6900198653 /* Takiginou */,
+				CEE5813E1824AA6900198653 /* TamukeyamaHachimanguu */,
+				CEE5813F1824AA6900198653 /* TamukeyamaTachiema */,
+				CEE581401824AA6900198653 /* Tanjouji */,
+				CEE581411824AA6900198653 /* Taxi */,
+				CEE581421824AA6900198653 /* Tegaimon */,
+				CEE581431824AA6900198653 /* TeikuHaisuichi */,
+				CEE581441824AA6900198653 /* Temple */,
+				CEE581451824AA6900198653 /* TenmadeAgareHigashimuki */,
+				CEE581461824AA6900198653 /* TenriKyoukai1 */,
+				CEE581471824AA6900198653 /* TenriKyoukai2 */,
+				CEE581481824AA6900198653 /* TenriKyoukai3 */,
+				CEE581491824AA6900198653 /* TenriKyoukai4 */,
+				CEE5814A1824AA6900198653 /* TerayamaReien */,
+				CEE5814B1824AA6900198653 /* Theater */,
+				CEE5814C1824AA6900198653 /* Tobihino */,
+				CEE5814D1824AA6900198653 /* Tokinoshiryoukan */,
+				CEE5814E1824AA6900198653 /* Tokuyuuji */,
+				CEE5814F1824AA6900198653 /* Toudaiji */,
+				CEE581501824AA6900198653 /* ToudaijiKyuukeidai */,
+				CEE581511824AA6900198653 /* ToudaijiSeishien */,
+				CEE581521824AA6900198653 /* ToudaijiToshokan */,
+				CEE581531824AA6900198653 /* ToudaijiTounan'in */,
+				CEE581541824AA6900198653 /* ToukaiShizenhodou */,
+				CEE581551824AA6900198653 /* Toukindou */,
+				CEE581561824AA6900198653 /* ToukyouGeidaiFuzokuShisetsu */,
+				CEE581571824AA6900198653 /* ToukyuuKankou */,
+				CEE581581824AA6900198653 /* Tounochaya */,
+				CEE581591824AA6900198653 /* Train */,
+				CEE5815A1824AA6900198653 /* Transportation */,
+				CEE5815B1824AA6900198653 /* TravelAgency */,
+				CEE5815C1824AA6900198653 /* TravelInformation */,
+				CEE5815D1824AA6900198653 /* TsubaiShougakkou */,
+				CEE5815E1824AA6900198653 /* Tsubohachi */,
+				CEE5815F1824AA6900198653 /* TsudumizakaKitaShougakkou */,
+				CEE581601824AA6900198653 /* TsudumizakaShougakkou */,
+				CEE581611824AA6900198653 /* UguisudukaKofun */,
+				CEE581621824AA6900198653 /* Ukimidou */,
+				CEE581631824AA6900198653 /* Umanome */,
+				CEE581641824AA6900198653 /* Unemesai */,
+				CEE581651824AA6900198653 /* University */,
+				CEE581661824AA6900198653 /* UwanabeIke */,
+				CEE581671824AA6900198653 /* WakabaRyouriGakkou */,
+				CEE581681824AA6900198653 /* WakakusaChuugakkou */,
+				CEE581691824AA6900198653 /* WakakusaHoteru */,
+				CEE5816A1824AA6900198653 /* WakakusaKouminkan */,
+				CEE5816B1824AA6900198653 /* WakakusaShoten */,
+				CEE5816C1824AA6900198653 /* Wakakusayama */,
+				CEE5816D1824AA6900198653 /* Wakakusayamayaki */,
+				CEE5816E1824AA6900198653 /* WakamiyaJinja */,
+				CEE5816F1824AA6900198653 /* WakamiyaOnmatsuri */,
+				CEE581701824AA6900198653 /* Yakyuujo */,
+				CEE581711824AA6900198653 /* YamatoSansou */,
+				CEE581721824AA6900198653 /* YanagiDyaya */,
+				CEE581731824AA6900198653 /* YasuraginoMichi */,
+				CEE581741824AA6900198653 /* YomiuriRyokou */,
+				CEE581751824AA6900198653 /* YoshikiGawa */,
+				CEE581761824AA6900198653 /* Yugajinja */,
+				CEE581771824AA6900198653 /* Yumeya */,
+				CEE581781824AA6900198653 /* Yurimatsuri */,
+				CEE581791824AA6900198653 /* Yuumeidou */,
+				CEE5817A1824AA6900198653 /* Zutou */,
+			);
+			path = text;
+			sourceTree = "<group>";
+		};
+		CEE5817B1824AA6900198653 /* textDebug */ = {
+			isa = PBXGroup;
+			children = (
+				CEE5817C1824AA6900198653 /* All */,
+				CEE5817D1824AA6900198653 /* Dining */,
+			);
+			path = textDebug;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEE57EAC1824A7DB00198653 /* WING */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE57EB61824A7DB00198653 /* Build configuration list for PBXNativeTarget "WING" */;
+			buildPhases = (
+				CEE57EA91824A7DB00198653 /* Sources */,
+				CEE57EAA1824A7DB00198653 /* Frameworks */,
+				CEE57EAB1824A7DB00198653 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WING;
+			productName = WING;
+			productReference = CEE57EAD1824A7DB00198653 /* WING */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEE57EA51824A7DB00198653 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Pitecan.com;
+			};
+			buildConfigurationList = CEE57EA81824A7DB00198653 /* Build configuration list for PBXProject "WING" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEE57EA41824A7DB00198653;
+			productRefGroup = CEE57EAE1824A7DB00198653 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEE57EAC1824A7DB00198653 /* WING */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEE57EA91824A7DB00198653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE57EE61824A81900198653 /* calc.c in Sources */,
+				CEE57EE71824A81900198653 /* calcWeight.c in Sources */,
+				CEE57EE81824A81900198653 /* digitalMap.c in Sources */,
+				CEE57EE91824A81900198653 /* draw.c in Sources */,
+				CEE57EEA1824A81900198653 /* geom.c in Sources */,
+				CEE57EEB1824A81900198653 /* index.c in Sources */,
+				CEE57EED1824A81900198653 /* joglIntel.c in Sources */,
+				CEE57EEE1824A81900198653 /* jstring.c in Sources */,
+				CEE57EF01824A81900198653 /* main.c in Sources */,
+				CEE57EF11824A81900198653 /* Makefile in Sources */,
+				CEE57EF21824A81900198653 /* mapData.c in Sources */,
+				CEE57EF31824A81900198653 /* mapitem.c in Sources */,
+				CEE57EF41824A81900198653 /* move.c in Sources */,
+				CEE57EF51824A81900198653 /* readdata.c in Sources */,
+				CEE57EF61824A81900198653 /* rgb.c in Sources */,
+				CEE57EF71824A81900198653 /* showGuide.c in Sources */,
+				CEE57EF81824A81900198653 /* sub.c in Sources */,
+				CEE57EF91824A81900198653 /* toc.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CEE57EB41824A7DB00198653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CEE57EB51824A7DB00198653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CEE57EB71824A7DB00198653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/src\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CEE57EB81824A7DB00198653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/src\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEE57EA81824A7DB00198653 /* Build configuration list for PBXProject "WING" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE57EB41824A7DB00198653 /* Debug */,
+				CEE57EB51824A7DB00198653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE57EB61824A7DB00198653 /* Build configuration list for PBXNativeTarget "WING" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE57EB71824A7DB00198653 /* Debug */,
+				CEE57EB81824A7DB00198653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEE57EA51824A7DB00198653 /* Project object */;
+}

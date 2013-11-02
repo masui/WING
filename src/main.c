@@ -87,8 +87,7 @@ static int	rotating = FALSE;
 
 int main(int argc, char *argv[])
 {
-int	tid;	/* texture id */
-long	x, y;
+
 
 	glutInit(&argc, argv);
 	options(argc, argv);
