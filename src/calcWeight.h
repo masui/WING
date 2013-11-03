@@ -16,7 +16,7 @@
 #ifndef _CALCWEIGHT_H_
 #define _CALCWEIGHT_H_
 
-#include "./dataentry.h"
+#include "dataentry.h"
 
 typedef struct _Weight{
 	Item *item;

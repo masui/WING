@@ -45,13 +45,13 @@ typedef struct {
 static DATA *data = NULL;
 
 static char *fontname[7][2] = {
-	"./fonts/strvec.ixl", "./fonts/strvec.otl",	/* stroke style		*/
-	"./fonts/mincho.ixl", "./fonts/mincho.otl",	/* mincho style outline */
-	"./fonts/gosiku.ixl", "./fonts/gosiku.otl",	/* gosiku style outline */
-	"./fonts/marugo.ixl", "./fonts/marugo.otl",	/* marugo style outline */
-	"./fonts/mincho.ixp", "./fonts/mincho.plg",	/* mincho style polygon */
-	"./fonts/gosiku.ixp", "./fonts/gosiku.plg",	/* gosiku style polygon */
-	"./fonts/marugo.ixp", "./fonts/marugo.plg",	/* marugo style polygon */
+	"fonts/strvec.ixl", "fonts/strvec.otl",	/* stroke style		*/
+	"fonts/mincho.ixl", "fonts/mincho.otl",	/* mincho style outline */
+	"fonts/gosiku.ixl", "fonts/gosiku.otl",	/* gosiku style outline */
+	"fonts/marugo.ixl", "fonts/marugo.otl",	/* marugo style outline */
+	"fonts/mincho.ixp", "fonts/mincho.plg",	/* mincho style polygon */
+	"fonts/gosiku.ixp", "fonts/gosiku.plg",	/* gosiku style polygon */
+	"fonts/marugo.ixp", "fonts/marugo.plg",	/* marugo style polygon */
 };
 
 /* Caution! This module use EUC code. Don't change the character code. */

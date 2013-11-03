@@ -12,7 +12,7 @@
 #define	MAPDATA_H
 
 #ifndef MAPDIR
-#define MAPDIR "./data/map/"
+#define MAPDIR "data/map/"
 #endif
 
 #define	MAXLINES	10000

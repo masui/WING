@@ -14,10 +14,10 @@
 #define _DATAENTRY_H_
 
 #ifndef TEXTDIR
-#define TEXTDIR "./data/text/"
+#define TEXTDIR "data/text/"
 #endif
 #ifndef IMAGEDIR
-#define IMAGEDIR "./data/rgb/"
+#define IMAGEDIR "data/rgb/"
 #endif
 
 typedef struct _ItemList {

@@ -7,7 +7,7 @@
 #define _JSTRING_H_
 
 #ifndef JISFONTDIR
-#define JISFONTDIR "./fonts/"
+#define JISFONTDIR "fonts/"
 #endif
 #define JIS16FONT JISFONTDIR "jis16"
 #define JIS24FONT JISFONTDIR "jis24"
