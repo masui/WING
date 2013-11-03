@@ -71,6 +71,9 @@ push:
 	git push git@github.com:masui/WING.git
 
 clean:
-	-/bin/rm src/*.o
-	-/bin/rm wing
+	-/bin/rm -f src/*.o
+	-/bin/rm -f wing
+	-/bin/rm -r -f WING.app
+	-/bin/rm -f WING.dmg
+
 
